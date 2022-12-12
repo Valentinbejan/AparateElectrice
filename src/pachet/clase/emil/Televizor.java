@@ -3,10 +3,10 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class Televizor extends AparatElectric {
-	private String tipTV; // ex:SmartTV,SmartTV 3D, non SmartTV
-	private String accesoriiIncluse;// ex:manual de utilizare, telecomanda, cablu de alimentare
+	private String tipTV; // ex:Clasic, SmartTV,SmartTV 3D,
+	private String tehnologieAudio; // ex: Fara, Dolby Digital, Dolby Digital Plus, Dolby Atmos
 	private double greutate;// ex:13,5 kg
-	private double diagonalaEcran;// ex:80cm, 125cm
+	private double diagonalaEcran; // ex:80cm, 125cm
 	private String tehnologieDisplay;// ex:LCD,LED,OLED
 	private String rezolutie;// ex:HD,FullHD,UltraHD4K
 	private String tipDisplay;// ex:plat, curbat
@@ -14,22 +14,34 @@ public class Televizor extends AparatElectric {
 	// Constructor implicit (fara parametri):
 	public Televizor() {
 		super();
-		tipTV = null;
-		accesoriiIncluse = null;
-		greutate = 0;
-		diagonalaEcran = 0;
-		tehnologieDisplay = null;
-		rezolutie = null;
-		tipDisplay = null;
+		this.tipTV = "";
+		this.tehnologieAudio = "";
+		this.greutate = 0;
+		this.diagonalaEcran = 0;
+		this.tehnologieDisplay = "";
+		this.rezolutie = "";
+		this.tipDisplay = "";
+	}
+
+	// construcotr cu parametrii superclasei
+	public Televizor(String numeProdus, String producator, double pret, String culoare, double putereConsumata) {
+		super(numeProdus, producator, pret, culoare, putereConsumata);
+		this.tipTV = "";
+		this.tehnologieAudio = "";
+		this.greutate = 0;
+		this.diagonalaEcran = 0;
+		this.tehnologieDisplay = "";
+		this.rezolutie = "";
+		this.tipDisplay = "";
 	}
 
 	// Constructor explicit (cu parametri):
-	public Televizor(String numeProdus, String producator, double pret, String culoare, double putereConsumata, String tipTV,
-			String accesoriiIncluse, double greutate, double diagonalaEcran, String tehnologieDisplay, String rezolutie,
-			String tipDisplay) {
+	public Televizor(String numeProdus, String producator, double pret, String culoare, double putereConsumata,
+			String tipTV, String tehnologieAudio, double greutate, double diagonalaEcran, String tehnologieDisplay,
+			String rezolutie, String tipDisplay) {
 		super(numeProdus, producator, pret, culoare, putereConsumata);
 		this.tipTV = tipTV;
-		this.accesoriiIncluse = accesoriiIncluse;
+		this.tehnologieAudio = tehnologieAudio;
 		this.greutate = greutate;
 		this.diagonalaEcran = diagonalaEcran;
 		this.tehnologieDisplay = tehnologieDisplay;
@@ -38,87 +50,88 @@ public class Televizor extends AparatElectric {
 	}
 
 	// Constructor de copiere:
-	public Televizor(Televizor t1) {
-		super(t1);
-		this.tipTV = t1.tipTV;
-		this.accesoriiIncluse = t1.accesoriiIncluse;
-		this.greutate = t1.greutate;
-		this.diagonalaEcran = t1.diagonalaEcran;
-		this.tehnologieDisplay = t1.tehnologieDisplay;
-		this.rezolutie = t1.rezolutie;
-		this.tipDisplay = t1.tipDisplay;
+	public Televizor(Televizor t) {
+		super(t);
+		this.tipTV = t.tipTV;
+		this.tehnologieAudio = t.tehnologieAudio;
+		this.greutate = t.greutate;
+		this.diagonalaEcran = t.diagonalaEcran;
+		this.tehnologieDisplay = t.tehnologieDisplay;
+		this.rezolutie = t.rezolutie;
+		this.tipDisplay = t.tipDisplay;
 	}
 
 	// Metode setters si getters:
-	public void setTipTV(String tipTV) {
-		this.tipTV = tipTV;
-	}
-
 	public String getTipTV() {
 		return tipTV;
 	}
 
-	public void setAccesoriiIncluse(String accesoriiIncluse) {
-		this.accesoriiIncluse = accesoriiIncluse;
+	public void setTipTV(String tipTV) {
+		this.tipTV = tipTV;
 	}
 
-	public String getAccesoriiIncluse() {
-		return accesoriiIncluse;
+	public String getTehnologieAudio() {
+		return tehnologieAudio;
 	}
 
-	public void setGreutate(double greutate) {
-		this.greutate = greutate;
+	public void setTehnologieAudio(String tehnologieAudio) {
+		this.tehnologieAudio = tehnologieAudio;
 	}
 
 	public double getGreutate() {
 		return greutate;
 	}
 
-	public void setDiagonalaEcran(double diagonalaEcran) {
-		this.diagonalaEcran = diagonalaEcran;
+	public void setGreutate(double greutate) {
+		this.greutate = greutate;
 	}
 
 	public double getDiagonalaEcran() {
 		return diagonalaEcran;
 	}
 
-	public void setTehnologieDisplay(String tehnologieDisplay) {
-		this.tehnologieDisplay = tehnologieDisplay;
+	public void setDiagonalaEcran(double diagonalaEcran) {
+		this.diagonalaEcran = diagonalaEcran;
 	}
 
 	public String getTehnologieDisplay() {
 		return tehnologieDisplay;
 	}
 
-	public void setRezolutie(String rezolutie) {
-		this.rezolutie = rezolutie;
+	public void setTehnologieDisplay(String tehnologieDisplay) {
+		this.tehnologieDisplay = tehnologieDisplay;
 	}
 
 	public String getRezolutie() {
 		return rezolutie;
 	}
 
-	public void setTipDisplay(String tipDisplay) {
-		this.tipDisplay = tipDisplay;
+	public void setRezolutie(String rezolutie) {
+		this.rezolutie = rezolutie;
 	}
 
 	public String getTipDisplay() {
 		return tipDisplay;
 	}
 
-	
+	public void setTipDisplay(String tipDisplay) {
+		this.tipDisplay = tipDisplay;
+	}
+
 	@Override
 	public String toString() {
-		StringBuffer buffer = new StringBuffer();
-		buffer.append(super.toString());
-		buffer.append("\n\tTipul televizorului:\t" + tipTV);
-		buffer.append("\n\tAccesorii incluse:\t" + accesoriiIncluse);
-		buffer.append("\n\tGreutate:\t\t" + greutate + " [kg]");
-		buffer.append("\n\tDiagonala ecranului:\t" + diagonalaEcran + " [cm]");
-		buffer.append("\n\tTehnologia display:\t" + tehnologieDisplay);
-		buffer.append("\n\tRezolutie:\t\t" + rezolutie);
-		buffer.append("\n\tTip display:\t\t" + tipDisplay);
-		return buffer.toString();
+		StringBuilder sir = new StringBuilder();
+		sir.append(super.toString());
+		sir.append("\n\tTipTV=" + tipTV);
+		sir.append("\n\tTehnologieAudio=" + tehnologieAudio);
+		sir.append("\n\tGreutate=" + greutate + " kg");
+		sir.append("\n\tDiagonalaEcran=" + diagonalaEcran + " cm");
+		sir.append("\n\tTehnologieDisplay=" + tehnologieDisplay);
+		sir.append("\n\tRezolutie=" + rezolutie);
+		sir.append("\n\tTipDisplay=" + tipDisplay+"\n\n");
+
+		return sir.toString();
+
 	}
 
 	@Override
