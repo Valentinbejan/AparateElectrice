@@ -3,163 +3,142 @@ package pachet.clase.emil;
 
 import pachet.clasa.abstracta.AparatElectric;
 
-
 public class StatieCalcat extends AparatElectric {
-    private String  talpa;
-    private double  latime;
-    private double  lungime;
-    private double  adancime;
-    private double  lungimeCablu;
-    private double  greutate;
-    private double  debitAbur;
-    private double  jetAbur;
-    private double  presiuneAbur;
-    private String  functii;
-    
-    //Constructor implicit (fara parametri):
-    public StatieCalcat(){
-        super();
-        talpa = null;
-        latime = 0;
-        lungime = 0;
-        adancime = 0;
-        lungimeCablu = 0;
-        greutate = 0;
-        debitAbur = 0;
-        jetAbur = 0;
-        presiuneAbur = 0;
-        functii = null;
+	private String tip; // vertical //horizontal
+	private String materialTalpa; // teflon //ceramica //inox
+	private String tip_panou_de_comanda; // mecanic //digital
+	private double greutate; // kg
+	private String functie; // auto-curatare //anticalcar //cu boiler
+	private double capacitate_rezervor_apa; // l
 
-    }
-    //Constructor explicit (cu parametri):
-    public StatieCalcat(String numeProdus, String producator, double pret, String culoare, double putereConsumata,
-                 String talpa, double latime, double lungime, double adancime, double lungimeCablu, double greutate,
-                 double debitAbur, double jetAbur, double presiuneAbur, String functii){
-        super(numeProdus, producator, pret, culoare, putereConsumata);
-        this.talpa = talpa;
-        this.latime = latime;
-        this.lungime = lungime;
-        this.adancime = adancime;
-        this.lungimeCablu = lungimeCablu;
-        this.greutate = greutate;
-        this.debitAbur = debitAbur;
-        this.jetAbur = jetAbur;
-        this.presiuneAbur = presiuneAbur;
-        this.functii = functii;
+	// Constructor implicit (fara parametri):
+	public StatieCalcat() {
+		super();
+		this.tip = "";
+		this.materialTalpa = "";
+		this.tip_panou_de_comanda = "";
+		this.greutate = 0;
+		this.functie = "";
+		this.capacitate_rezervor_apa = 0;
 
-    }
-   //Constructor de copiere:
-    public StatieCalcat(StatieCalcat obiect) {
-        super(obiect);
-        this.talpa = obiect.talpa;
-        this.latime = obiect.latime;
-        this.lungime = obiect.lungime;
-        this.adancime = obiect.adancime;
-        this.lungimeCablu = obiect.lungimeCablu;
-        this.greutate = obiect.greutate;
-        this.debitAbur = obiect.debitAbur;
-        this.jetAbur = obiect.jetAbur;
-        this.presiuneAbur = obiect.presiuneAbur;
-        this.functii = obiect.functii;
-    }
-    //Metode setters si getters:
-    public void setTalpa(String talpa) {
-        this.talpa = talpa;
-    }
-    public String getTalpa() {
-        return talpa;
-    }
+	}
 
-    public void setLatime(double latime) {
-        this.latime = latime;
-    }
-    public double getLatime() {
-        return latime;
-    }
+	// construcotr cu parametrii superclasei
+	public StatieCalcat(String numeProdus, String producator, double pret, String culoare, double putereConsumata) {
+		super(numeProdus, producator, pret, culoare, putereConsumata);
+		this.tip = "";
+		this.materialTalpa = "";
+		this.tip_panou_de_comanda = "";
+		this.greutate = 0;
+		this.functie = "";
+		this.capacitate_rezervor_apa = 0;
+	}
 
-    public void setLungime(double lungime) {
-        this.lungime = lungime;
-    }
-    public double getLungime() {
-        return lungime;
-    }
+	// Constructor explicit (cu parametri):
+	public StatieCalcat(String numeProdus, String producator, double pret, String culoare, double putereConsumata,
+			String tip, String materialTalpa, String tip_panou_de_comanda, double greutate, String functii,
+			double capacitate_rezervor_apa) {
+		super(numeProdus, producator, pret, culoare, putereConsumata);
+		this.tip = tip;
+		this.materialTalpa = materialTalpa;
+		this.tip_panou_de_comanda = tip_panou_de_comanda;
+		this.greutate = greutate;
+		this.functie = functii;
+		this.capacitate_rezervor_apa = capacitate_rezervor_apa;
+	}
 
-    public void setAdancime(double adancime) {
-        this.adancime = adancime;
-    }
-    public double getAdancime() {
-        return adancime;
-    }
+	// Constructor de copiere:
+	public StatieCalcat(StatieCalcat s) {
+		super(s);
+		this.tip = s.tip;
+		this.materialTalpa = s.materialTalpa;
+		this.tip_panou_de_comanda = s.tip_panou_de_comanda;
+		this.greutate = s.greutate;
+		this.functie = s.functie;
+		this.capacitate_rezervor_apa = s.capacitate_rezervor_apa;
+	}
+	// Metode setters si getters:
 
-    public void setLungimeCablu(double lungimeCablu) {
-        this.lungimeCablu = lungimeCablu;
-    }
-    public double getLungimeCablu() {
-        return lungimeCablu;
-    }
+	public String getTip() {
+		return tip;
+	}
 
-    public void setGreutate(double greutate) {
-        this.greutate = greutate;
-    }
-    public double getGreutate() {
-        return greutate;
-    }
+	public void setTip(String tip) {
+		this.tip = tip;
+	}
 
-    public void setDebitAbur(double debitAbur) {
-        this.debitAbur = debitAbur;
-    }
-    public double getDebitAbur() {
-        return debitAbur;
-    }
+	public String getMaterialTalpa() {
+		return materialTalpa;
+	}
 
-    public void setJetAbur(double jetAbur) {
-        this.jetAbur = jetAbur;
-    }
-    public double getJetAbur() {
-        return jetAbur;
-    }
+	public void setMaterialTalpa(String materialTalpa) {
+		this.materialTalpa = materialTalpa;
+	}
 
-    public void setPresiuneAbur(double presiuneAbur) {
-        this.presiuneAbur = presiuneAbur;
-    }
-    public double getPresiuneAbur() {
-        return presiuneAbur;
-    }
+	public String getTip_panou_de_comanda() {
+		return tip_panou_de_comanda;
+	}
 
-    public void setFunctii(String functii) {
-        this.functii = functii;
-    }
-    public String getFunctii() {
-        return functii;
-    }
-    //Supraincarcarea metodei toString:
-    @Override
-    public String toString(){
+	public void setTip_panou_de_comanda(String tip_panou_de_comanda) {
+		this.tip_panou_de_comanda = tip_panou_de_comanda;
+	}
 
-        return  super.toString()
-                + "\n\tTalpa:\t\t\t" + talpa
-                + "\n\tLatime:\t\t\t" + latime + " [cm]"
-                + "\n\tLungime:\t\t" + lungime + " [cm]"
-                + "\n\tAdancime:\t\t" + adancime + " [cm]"
-                + "\n\tLungime cablu:\t\t" + lungimeCablu + " [m]"
-                + "\n\tGreutate:\t\t" +   greutate + " [kg]"
-                + "\n\tDebit de abur:\t\t" + debitAbur + " [g/min]"
-                + "\n\tJet abur:\t\t" + jetAbur + " [g/min]"
-                + "\n\tPresiune abur:\t\t" + presiuneAbur + " [bar]"
-                + "\n\tFunctii:\t\t" + functii;
+	public double getGreutate() {
+		return greutate;
+	}
 
-    }
-   
-    
-      @Override
-    public double calculeazaPretConsumPeLuna(int oreConsumZi) {
-        return this.getPutereConsumata() * oreConsumZi * 30;
-    }
+	public void setGreutate(double greutate) {
+		this.greutate = greutate;
+	}
 
-    @Override
-    public double calculeazaPretConsumPeZi(int oreConsumZi) {
-        return this.getPutereConsumata() * oreConsumZi;
-    }
+	public String getFunctie() {
+		return functie;
+	}
 
-    
+	public void setFunctie(String functii) {
+		this.functie = functii;
+	}
+
+	public double getCapacitate_rezervor_apa() {
+		return capacitate_rezervor_apa;
+	}
+
+	public void setCapacitate_rezervor_apa(double capacitate_rezervor_apa) {
+		this.capacitate_rezervor_apa = capacitate_rezervor_apa;
+	}
+
+	// Supraincarcarea metodei toString:
+	@Override
+	public String toString() {
+		StringBuilder sir = new StringBuilder();
+		sir.append(super.toString());
+		sir.append("\n\tTip: " + this.tip);
+		sir.append("\n\tMaterial talpa: " + this.materialTalpa);
+		sir.append("\n\tTip panou de comanda: " + this.tip_panou_de_comanda);
+		sir.append("\n\tGreutate: " + this.greutate + " kg");
+		sir.append("\n\tFunctie: " + this.functie);
+		sir.append("\n\tCapacitate rezervor apa: " + this.capacitate_rezervor_apa+" L\n\n");
+
+		return sir.toString();
+
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// folosim contructorul de copiere
+		// urmat de "new" pentru a creea un nou obiect
+		StatieCalcat clona = new StatieCalcat(this);
+		return clona;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi * 30;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeZi(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi;
+	}
+
 }
