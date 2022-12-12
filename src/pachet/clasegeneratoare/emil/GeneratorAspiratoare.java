@@ -5,7 +5,7 @@ import java.util.Random;
 import pachet.clase.emil.*;
 
 public class GeneratorAspiratoare {
-	private static String[] claseEmisiPraf = new String[] { "A", "B", "C" };
+	private static char[] claseEmisiPraf = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G' };
 	private static String[] tipuri = new String[] { "vertical", "horizontal" };
 	private static String[] tipuriAspirare = new String[] { "umeda", "uscata" };
 	private static String[] tipuriCarcasa = new String[] { "plastic", "metal" };
