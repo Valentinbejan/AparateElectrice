@@ -3,11 +3,11 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class Aspirator extends AparatElectric {
-	private String clasaEmisiPraf; // A //B //C
+	private char clasaEmisiPraf; // A //B //C
 	private String tip; // vertical //horizontal
 	private String tipAspirare; // umeda //uscata
 	private String tipCarcasa; // plastic //metal
-	private String tipSac; // Hartie, Platic, Textil
+	private String tipSac; // hartie, platic, textil
 	private String tipFiltru; // HEPA //H13 //H14 //H15
 	private int capacitateDeColectare; // ml
 	private int greutate; // kg
@@ -17,7 +17,7 @@ public class Aspirator extends AparatElectric {
 	// constructor fara parametri
 	public Aspirator() {
 		super();
-		this.clasaEmisiPraf = "";
+		this.clasaEmisiPraf = ' ';
 		this.tip = "";
 		this.tipAspirare = "";
 		this.tipCarcasa = "";
@@ -32,7 +32,7 @@ public class Aspirator extends AparatElectric {
 	// construcotr cu parametrii superclasei
 	public Aspirator(String numeProdus, String producator, double pret, String culoare, double putereConsumata) {
 		super(numeProdus, producator, pret, culoare, putereConsumata);
-		this.clasaEmisiPraf = "";
+		this.clasaEmisiPraf = ' ';
 		this.tip = "";
 		this.tipAspirare = "";
 		this.tipCarcasa = "";
@@ -46,7 +46,7 @@ public class Aspirator extends AparatElectric {
 
 	// constructor cu parametri
 	public Aspirator(String numeProdus, String producator, double pret, String culoare, double putereConsumata,
-			String clasaEmisiPraf, String tip, String tipAspirare, String tipCarcasa, String tipSac, String tipFiltru,
+			char clasaEmisiPraf, String tip, String tipAspirare, String tipCarcasa, String tipSac, String tipFiltru,
 			int capacitateDeColectare, int greutate, int nivelZgomot, int nrFiltre) {
 		super(numeProdus, producator, pret, culoare, putereConsumata);
 		this.clasaEmisiPraf = clasaEmisiPraf;
@@ -105,11 +105,11 @@ public class Aspirator extends AparatElectric {
 	}
 
 	// Metode getters si setters
-	public String getClasaEmisiPraf() {
+	public char getClasaEmisiPraf() {
 		return clasaEmisiPraf;
 	}
 
-	public void setClasaEmisiPraf(String clasaEmisiPraf) {
+	public void setClasaEmisiPraf(char clasaEmisiPraf) {
 		this.clasaEmisiPraf = clasaEmisiPraf;
 	}
 
