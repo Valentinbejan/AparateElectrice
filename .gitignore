@@ -1,0 +1,7 @@
+#eclipse
+bin
+.settings/
+
+#netbeans
+build
+nbproject/private
