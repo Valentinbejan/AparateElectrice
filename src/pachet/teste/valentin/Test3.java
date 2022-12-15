@@ -6,6 +6,11 @@ package pachet.teste.valentin;
 
 import java.util.ArrayList;
 import pachet.clase.valentin.FierCalcat;
+import pachet.clasegeneratoare.vali.GeneratorAerConditionat;
+import pachet.clasegeneratoare.vali.GeneratorFierCalcat;
+import pachet.clasegeneratoare.vali.GeneratorMasinaSpalatRufe;
+import pachet.clasegeneratoare.vali.GeneratorMasinaSpalatVase;
+import pachet.clasegeneratoare.vali.GeneratorMonitor;
 import pachet.clase.valentin.*;
 
 /**
@@ -13,41 +18,31 @@ import pachet.clase.valentin.*;
  * @author Valentin
  */
 public class Test3 {
-    
-    
-    
-    
-    public static void main(String[] args) {
-		
-			
-		ArrayList<FierCalcat> listaFierCalcat = GeneratorFierCalcat.genereazaRandomFierCalcat(10);		
-		for(FierCalcat unFierCalcat:listaFierCalcat)
+
+	public static void main(String[] args) {
+
+		ArrayList<FierCalcat> listaFierCalcat = GeneratorFierCalcat.genereazaRandomFierCalcat(10);
+		for (FierCalcat unFierCalcat : listaFierCalcat)
 			System.out.println(unFierCalcat);
-		
-                
-                ArrayList<AerConditionat> listaAerConditionat = GeneratorAerConditionat.genereazaRandomAerConditionat(10);		
-		for(AerConditionat unAerConditionat:listaAerConditionat)
+
+		ArrayList<AerConditionat> listaAerConditionat = GeneratorAerConditionat.genereazaRandomAerConditionat(10);
+		for (AerConditionat unAerConditionat : listaAerConditionat)
 			System.out.println(unAerConditionat);
-                
-                
-                ArrayList<MasinaSpalatRufe> listaMasinaSpalatRufe = GeneratorMasinaSpalatRufe.genereazaRandomMasinaSpalatRufe(10);		
-		for(MasinaSpalatRufe unMasinaSpalatRufe:listaMasinaSpalatRufe)
+
+		ArrayList<MasinaSpalatRufe> listaMasinaSpalatRufe = GeneratorMasinaSpalatRufe
+				.genereazaRandomMasinaSpalatRufe(10);
+		for (MasinaSpalatRufe unMasinaSpalatRufe : listaMasinaSpalatRufe)
 			System.out.println(unMasinaSpalatRufe);
-                
-                
-                ArrayList<MasinaSpalatVase> listaMasinaSpalatVase = GeneratorMasinaSpalatVase.genereazaRandomMasinaSpalatVase(10);		
-		for(MasinaSpalatVase unMasinaSpalatVase:listaMasinaSpalatVase)
+
+		ArrayList<MasinaSpalatVase> listaMasinaSpalatVase = GeneratorMasinaSpalatVase
+				.genereazaRandomMasinaSpalatVase(10);
+		for (MasinaSpalatVase unMasinaSpalatVase : listaMasinaSpalatVase)
 			System.out.println(unMasinaSpalatVase);
-                
-              
-                 ArrayList<Monitor> listaMonitor = GeneratorMonitor.genereazaRandomMonitor(10);		
-		for(Monitor unMonitor:listaMonitor)
+
+		ArrayList<Monitor> listaMonitor = GeneratorMonitor.genereazaRandomMonitor(10);
+		for (Monitor unMonitor : listaMonitor)
 			System.out.println(unMonitor);
-                
-                
 
 	}
-    
-    
-    
+
 }
