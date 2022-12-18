@@ -42,7 +42,7 @@ public class Test3 {
 		ArrayList<Monitor> listaMonitor = GeneratorMonitor.genereazaRandomMonitor(10);
 		for (Monitor unMonitor : listaMonitor)
 			System.out.println(unMonitor);
-
+                      
 	}
 
 }
