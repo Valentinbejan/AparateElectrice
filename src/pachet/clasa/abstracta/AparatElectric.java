@@ -1,7 +1,10 @@
 
 package pachet.clasa.abstracta;
 
-public abstract class AparatElectric {
+import java.io.Serializable;
+
+public abstract class AparatElectric implements Serializable{
+	private static final long serialVersionUID = 5656L;
 	private String numeProdus;
 	private String producator;
 	private double pret;
@@ -89,4 +92,13 @@ public abstract class AparatElectric {
 				+ " [lei]" + "\n\tCuloare:\t\t" + culoare + "\n\tPutere Consumata:\t" + putereConsumata + " [W]";
 	}
 
+        
+         public String afisare() {
+        return  "Echipament electrocasnic:\t" + numeProdus
+                + "\n\n\tProducator:\t\t" + producator
+                + "\n\tPret:\t\t\t" + pret + " [lei]"
+                + "\n\tCuloare:\t\t\t" + culoare
+                + "\n\tPutere Consumata:\t" + putereConsumata + " [W]";}
+        
+        
 }

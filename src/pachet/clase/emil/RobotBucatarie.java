@@ -4,6 +4,7 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class RobotBucatarie extends AparatElectric {
+	private static final long serialVersionUID = 5656L;
 	private float capacitate;
 	private int numarViteze;
 	private int numarUstensile;

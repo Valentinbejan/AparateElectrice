@@ -73,4 +73,12 @@ public class MasinaSpalatVase extends AparatElectric {
 		return this.getPutereConsumata() * oreConsumZi;
 	}
 
+        //Metoda de afisare pentru GUI:
+    @Override
+    public String afisare(){
+        return  super.afisare()
+                + "\n\tNumar de seturi:\t\t" + numarSeturi
+                + "\n\tLatime cuva:\t\t" + latimeCuva + " [cm]";
+    }
+        
 }

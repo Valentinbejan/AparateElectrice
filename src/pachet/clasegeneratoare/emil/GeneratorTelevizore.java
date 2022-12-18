@@ -14,8 +14,10 @@ public class GeneratorTelevizore {
 //	private String tipDisplay;// ex:plat, curbat
 
 	private static String[] tipuriTV = new String[] { "Clasic", "SmartTV", "SmartTV 3D" };
+
 	private static String[] tehnologiiAudio = new String[] { "Fara", "Dolby Digital", "Dolby Digital Plus",
 			"Dolby Atmos" };
+
 	private static double[] greutati = new double[] { 13.5, 15.5, 17.5, 19.5, 21.5 };
 	private static double[] diagonaleEcran = new double[] { 80, 100, 125, 150, 175 };
 	private static String[] tehnologiiDisplay = new String[] { "LCD", "LED", "OLED" };
@@ -29,8 +31,8 @@ public class GeneratorTelevizore {
 		ArrayList<Televizor> televizoare = new ArrayList<Televizor>();
 		Random r = new Random();
 		for (int i = 0; i < nrTelevizoare; i++) {
-			Televizor t = new Televizor("Televizor" + (i + 1), "Producator" + (i + 1), r.nextDouble(1000),
-					culori[r.nextInt(culori.length)], r.nextDouble(1000));
+			Televizor t = new Televizor("Televizor" + (i + 1), "Producator" + (i + 1), Math.max(100, r.nextInt(1000)),
+					culori[r.nextInt(culori.length)], Math.max(100, r.nextInt(1000)));
 			t.setTipTV(tipuriTV[r.nextInt(tipuriTV.length)]);
 			t.setTehnologieAudio(tehnologiiAudio[r.nextInt(tehnologiiAudio.length)]);
 			t.setGreutate(greutati[r.nextInt(greutati.length)]);
@@ -41,5 +43,13 @@ public class GeneratorTelevizore {
 			televizoare.add(t);
 		}
 		return televizoare;
+	}
+
+	public static String[] getTipuriTV() {
+		return tipuriTV;
+	}
+
+	public static String[] getTehnologiiAudio() {
+		return tehnologiiAudio;
 	}
 }
