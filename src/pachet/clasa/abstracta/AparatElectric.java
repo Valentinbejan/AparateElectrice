@@ -1,7 +1,10 @@
 
 package pachet.clasa.abstracta;
 
-public abstract class AparatElectric {
+import java.io.Serializable;
+
+public abstract class AparatElectric implements Serializable{
+	private static final long serialVersionUID = 5656L;
 	private String numeProdus;
 	private String producator;
 	private double pret;

@@ -4,6 +4,7 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class StatieCalcat extends AparatElectric {
+	private static final long serialVersionUID = 5656L;
 	private String tip; // vertical //horizontal
 	private String materialTalpa; // teflon //ceramica //inox
 	private String tip_panou_de_comanda; // mecanic //digital
