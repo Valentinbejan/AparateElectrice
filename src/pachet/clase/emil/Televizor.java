@@ -3,6 +3,7 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class Televizor extends AparatElectric {
+	private static final long serialVersionUID = 5656L;
 	private String tipTV; // ex:Clasic, SmartTV,SmartTV 3D,
 	private String tehnologieAudio; // ex: Fara, Dolby Digital, Dolby Digital Plus, Dolby Atmos
 	private double greutate;// ex:13,5 kg
@@ -122,13 +123,13 @@ public class Televizor extends AparatElectric {
 	public String toString() {
 		StringBuilder sir = new StringBuilder();
 		sir.append(super.toString());
-		sir.append("\n\tTipTV=" + tipTV);
-		sir.append("\n\tTehnologieAudio=" + tehnologieAudio);
-		sir.append("\n\tGreutate=" + greutate + " kg");
-		sir.append("\n\tDiagonalaEcran=" + diagonalaEcran + " cm");
-		sir.append("\n\tTehnologieDisplay=" + tehnologieDisplay);
-		sir.append("\n\tRezolutie=" + rezolutie);
-		sir.append("\n\tTipDisplay=" + tipDisplay+"\n\n");
+		sir.append("\n\tTipTV: " + tipTV);
+		sir.append("\n\tTehnologieAudio: " + tehnologieAudio);
+		sir.append("\n\tGreutate: " + greutate + " kg");
+		sir.append("\n\tDiagonalaEcran: " + diagonalaEcran + " cm");
+		sir.append("\n\tTehnologieDisplay: " + tehnologieDisplay);
+		sir.append("\n\tRezolutie: " + rezolutie);
+		sir.append("\n\tTipDisplay: " + tipDisplay+"\n\n");
 
 		return sir.toString();
 
