@@ -87,5 +87,17 @@ public class AerConditionat extends AparatElectric {
 	}
 	
 	
+        
+        //incercare5
+        @Override
+    public String afisare(){
+        return super.afisare()
+            + "\n\tClasa:\t\t\t" + clasa
+            + "\n\tArie Acoperita:\t\t" + arieAcoperita +" [m]" 
+            + "\n\tConsum telecomanda:\t"+ consumTelecomanda +" [W]\n\n";
+    }
+        
+        
+        
 
 }

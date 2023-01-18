@@ -23,20 +23,20 @@ public class GeneratorAerConditionat {
 			"LG" };
 
 	static private double pret;
-	static private int minpret = 500;
+	static private int minpret = 50;
 	static private int maxpret = 4500;
 
 	static private String[] culoareAerConditionat = new String[] { "alb", "negru", "verde", "albastru", "rosu",
 			"galben" };
 
 	static private double putereConsumata;
-	static private int minputereConsumata = 10000;
-	static private int maxputereConsumata = 75000;
+	static private int minputereConsumata = 100;
+	static private int maxputereConsumata = 3000;
 
 	static private String[] clasaAerConditionat = new String[] { "A+", "A++", "A+++", "C", "B", "D" };
 
-	static private int minarieAcoperita = 10;
-	static private int maxarieAcoperita = 100;
+	static private int minarieAcoperita = 1;
+	static private int maxarieAcoperita = 20;
 
 	// metoda statica, poate fi apelata fara a instantia clasa
 	public static ArrayList<AerConditionat> genereazaRandomAerConditionat(int n) {
