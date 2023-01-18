@@ -65,4 +65,11 @@ public class MasinaSpalatRufe extends AparatElectric {
 		return this.getPutereConsumata() * oreConsumZi;
 	}
 
+      @Override
+    public String afisare(){
+        return  super.afisare()
+                + "\n\tCapacitate:\t\t" + capacitate
+                + "\n\tRotatii:\t\t\t" + rotatii + " [rotatii/min]\n\n\n";
+    }
+        
 }

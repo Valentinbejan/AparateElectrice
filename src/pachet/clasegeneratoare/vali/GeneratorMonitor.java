@@ -20,13 +20,13 @@ public class GeneratorMonitor {
 
 	static private String[] producatorMonitor = new String[] { "Philips", "Samsung", "LG", "Acer", "Asus", "Dell" };
 
-	static private int minpret = 500;
+	static private int minpret = 100;
 	static private int maxpret = 4500;
 
-	static private String[] culoareMonitor = new String[] { "alb", "negru", "verde", "albastru", "rosu", "galben" };
+	static private String[] culoareMonitor = new String[] { "Alb", "Negru", "Gri", "Albastru", "Argintiu", "Auriu" };
 
-	static private int minputereConsumata = 10000;
-	static private int maxputereConsumata = 50000;
+	static private int minputereConsumata = 50;
+	static private int maxputereConsumata = 100;
 
 	static private String[] formatEcranMonitor = new String[] { "clasic", "ultraWide", "Wide" };
 	static private String[] rezolutieOptimaMonitor = new String[] { "1280 x 720", "1920 x 1080", "2560 x 1440",

@@ -113,4 +113,16 @@ public class Monitor extends AparatElectric {
 		return this.getPutereConsumata() * oreConsumZi;
 	}
 
+         @Override
+    public String afisare(){
+        return super.afisare()
+        +"\n\tRata de refresh:\t\t"+rataRefresh+" [Hz]"
+        +"\n\tDiagonala:\t\t"+diagonala+" [inch]"
+        +"\n\tFormat ecran:\t\t"+formatEcran
+        +"\n\tRezolutie optima:\t\t"+rezolutieOptima
+        +"\n\tTimp de raspuns:\t"+timpRaspuns+" [ms]"
+        +"\n\tFunctii speciale:\t\t"+functiiSpeciale;
+    }
+        
+        
 }

@@ -141,5 +141,20 @@ public class FierCalcat extends AparatElectric {
 	public double calculeazaPretConsumPeZi(int oreConsumZi) {
 		return this.getPutereConsumata() * oreConsumZi;
 	}
+        
+        
+        @Override
+    public String afisare(){
+        return  super.afisare()
+                + "\n\tTalpa:\t\t\t" + talpa
+                + "\n\tLatime:\t\t\t" + latime + " [cm]"
+                + "\n\tLungime:\t\t" + lungime + " [cm]"
+                + "\n\tAdancime:\t\t" + adancime + " [cm]"
+                + "\n\tLungime cablu:\t\t" + lungimeCablu + " [m]"
+                + "\n\tGreutate:\t\t" +   greutate + " [kg]"
+                + "\n\tDebit de abur:\t\t" + debitAbur + " [g/min]"
+                + "\n\tFunctii:\t\t\t" + functii
+                + "\n\n\n";}
+
 
 }
