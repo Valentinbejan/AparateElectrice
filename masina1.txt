@@ -1,0 +1,71 @@
+[Aparat Electric: Masina de spalat rufe compacta cu incarcare frontala
+
+	Producator:		Beko
+	Pret:			940.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	658.0 [W]
+	Capacitate:		44.0
+	Rotatii:		473.0 [rotatii/min], Aparat Electric: Masina de spalat rufe cu incarcare verticala
+
+	Producator:		Whirlpool
+	Pret:			3235.0 [lei]
+	Culoare:		Rosu
+	Putere Consumata:	2486.0 [W]
+	Capacitate:		98.0
+	Rotatii:		1190.0 [rotatii/min], Aparat Electric: Masina de spalat rufe slim cu incarcare frontala
+
+	Producator:		Beko
+	Pret:			120.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	1938.0 [W]
+	Capacitate:		54.0
+	Rotatii:		5.0 [rotatii/min], Aparat Electric: Masina de spalat rufe cu incarcare verticala
+
+	Producator:		Beko
+	Pret:			584.0 [lei]
+	Culoare:		Argintiu
+	Putere Consumata:	1092.0 [W]
+	Capacitate:		61.0
+	Rotatii:		1181.0 [rotatii/min], Aparat Electric: Masina de spalat rufe compacta cu incarcare frontala
+
+	Producator:		Indesit
+	Pret:			1443.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	502.0 [W]
+	Capacitate:		41.0
+	Rotatii:		981.0 [rotatii/min], Aparat Electric: Masina de spalat rufe cu incarcare frontala
+
+	Producator:		Arctic
+	Pret:			889.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	1541.0 [W]
+	Capacitate:		71.0
+	Rotatii:		68.0 [rotatii/min], Aparat Electric: Masina de spalat rufe slim cu incarcare frontala
+
+	Producator:		Arctic
+	Pret:			3207.0 [lei]
+	Culoare:		Portocaliu
+	Putere Consumata:	674.0 [W]
+	Capacitate:		24.0
+	Rotatii:		1417.0 [rotatii/min], Aparat Electric: Masina de spalat rufe cu incarcare verticala
+
+	Producator:		Bosch
+	Pret:			465.0 [lei]
+	Culoare:		Gri
+	Putere Consumata:	2023.0 [W]
+	Capacitate:		43.0
+	Rotatii:		1465.0 [rotatii/min], Aparat Electric: Masina de spalat rufe slim cu incarcare frontala
+
+	Producator:		Indesit
+	Pret:			2541.0 [lei]
+	Culoare:		Albastru
+	Putere Consumata:	2310.0 [W]
+	Capacitate:		24.0
+	Rotatii:		1597.0 [rotatii/min], Aparat Electric: Masina de spalat rufe compacta cu incarcare frontala
+
+	Producator:		Bosch
+	Pret:			2216.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	528.0 [W]
+	Capacitate:		6.0
+	Rotatii:		250.0 [rotatii/min]]

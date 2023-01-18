@@ -18,17 +18,15 @@ public class GeneratorMasinaSpalatVase {
 	static private String[] numeProdusMasinaSpalatVase = new String[] { "Masina de spalat vase compacta",
 			"Masina de spalat vase standard" };
 
-	static private String[] producatorMasinaSpalatVase = new String[] { "BOSCH", "Candy", "Electrolux", "BEKO", "Hansa",
-			"Miele" };
+	static private String[] producatorMasinaSpalatVase = new String[] { "Bosch", "Whirlpool", "Indesit", "Beko", "Arctic"};
 
 	static private int minpret = 500;
-	static private int maxpret = 5000;
+	static private int maxpret = 3500;
 
-	static private String[] culoareMasinaSpalatVase = new String[] { "alb", "negru", "verde", "albastru", "rosu",
-			"galben" };
+	static private String[] culoareMasinaSpalatVase = new String[] { "Alb", "Argintiu", "Negru"};
 
-	static private int minputereConsumata = 100;
-	static private int maxputereConsumata = 2000;
+	static private int minputereConsumata = 500;
+	static private int maxputereConsumata = 2500;
 
 	// metoda statica, poate fi apelata fara a instantia clasa
 	public static ArrayList<MasinaSpalatVase> genereazaRandomMasinaSpalatVase(int n) {
@@ -40,7 +38,7 @@ public class GeneratorMasinaSpalatVase {
 			double putereConsumata = new Random().nextInt(maxputereConsumata - minputereConsumata + 1)
 					+ minputereConsumata;
 
-			int numarSeturi = new Random().nextInt(100);
+			int numarSeturi = new Random().nextInt(20);
 			double latimeCuva = new Random().nextInt(100);
 
 			String numeProdus = numeProdusMasinaSpalatVase[new Random().nextInt(numeProdusMasinaSpalatVase.length)];
