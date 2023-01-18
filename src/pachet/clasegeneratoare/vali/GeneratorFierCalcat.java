@@ -22,14 +22,14 @@ public class GeneratorFierCalcat {
 			"OEM" };
 
 	static private double pret;
-	static private int minpret = 100;
-	static private int maxpret = 800;
+	static private int minpret = 10;
+	static private int maxpret = 600;
 
-	static private String[] culoareFierCalcat = new String[] { "alb", "negru", "verde", "albastru", "rosu", "galben" };
+	static private String[] culoareFierCalcat = new String[] {"Negru", "Verde", "Albastru", "Rosu", "Galben" };
 
 	static private double putereConsumata;
-	static private int minputereConsumata = 100;
-	static private int maxputereConsumata = 2000;
+	static private int minputereConsumata = 500;
+	static private int maxputereConsumata = 3500;
 
 	static private String[] talpi = new String[] { "Zola", "Iron", "Philips", "Prym", "Veronesi", "STB" };
 	static private String[] functiiFierCalcat = new String[] { "functia anti picurare", "functia de oprire automata" };

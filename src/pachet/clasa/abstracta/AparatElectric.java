@@ -89,4 +89,13 @@ public abstract class AparatElectric {
 				+ " [lei]" + "\n\tCuloare:\t\t" + culoare + "\n\tPutere Consumata:\t" + putereConsumata + " [W]";
 	}
 
+        
+         public String afisare() {
+        return  "Echipament electrocasnic:\t" + numeProdus
+                + "\n\n\tProducator:\t\t" + producator
+                + "\n\tPret:\t\t\t" + pret + " [lei]"
+                + "\n\tCuloare:\t\t\t" + culoare
+                + "\n\tPutere Consumata:\t" + putereConsumata + " [W]";}
+        
+        
 }
