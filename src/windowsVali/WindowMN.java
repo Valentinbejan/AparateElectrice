@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import pachet.clase.valentin.Monitor;
 import pachet.clasegeneratoare.vali.GeneratorMonitor;
 
-/**
- *
- * @author Catalina Bejan
- */
+
 public class WindowMN extends javax.swing.JFrame {
 
     /**

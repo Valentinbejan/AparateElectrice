@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import pachet.clase.valentin.FierCalcat;
 import pachet.clasegeneratoare.vali.GeneratorFierCalcat;
 
-/**
- *
- * @author GABI
- */
+
 public class WindowFC extends javax.swing.JFrame {
 
     /**
