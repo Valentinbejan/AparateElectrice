@@ -1,0 +1,111 @@
+[Aparat Electric: Monitor QLED
+
+	Producator:		Dell
+	Pret:			1746.0 [lei]
+	Culoare:		Auriu
+	Putere Consumata:	95.0 [W]
+	Rata de refresh:	120.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		clasic
+	Rezolutie optima:	1280 x 720
+	Timp de raspuns:	9.0 [ms]
+	Functii speciale:	touchscreen, Aparat Electric: Monitor QLED
+
+	Producator:		Dell
+	Pret:			3048.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	70.0 [W]
+	Rata de refresh:	75.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		clasic
+	Rezolutie optima:	3840 x 2160
+	Timp de raspuns:	9.0 [ms]
+	Functii speciale:	ecran curbat, Aparat Electric: Monitor OLED
+
+	Producator:		Philips
+	Pret:			4287.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	77.0 [W]
+	Rata de refresh:	240.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		Wide
+	Rezolutie optima:	3840 x 2160
+	Timp de raspuns:	7.0 [ms]
+	Functii speciale:	ecran curbat, Aparat Electric: Monitor LED
+
+	Producator:		Samsung
+	Pret:			3198.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	57.0 [W]
+	Rata de refresh:	60.0 [Hz]
+	Diagonala:		20.0 [inch]
+	Format ecran:		Wide
+	Rezolutie optima:	1280 x 720
+	Timp de raspuns:	5.0 [ms]
+	Functii speciale:	touchscreen, Aparat Electric: Monitor OLED
+
+	Producator:		Acer
+	Pret:			1299.0 [lei]
+	Culoare:		Argintiu
+	Putere Consumata:	90.0 [W]
+	Rata de refresh:	60.0 [Hz]
+	Diagonala:		29.0 [inch]
+	Format ecran:		ultraWide
+	Rezolutie optima:	3840 x 2160
+	Timp de raspuns:	5.0 [ms]
+	Functii speciale:	webcam, Aparat Electric: Monitor LCD
+
+	Producator:		LG
+	Pret:			2453.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	60.0 [W]
+	Rata de refresh:	120.0 [Hz]
+	Diagonala:		27.0 [inch]
+	Format ecran:		clasic
+	Rezolutie optima:	2560 x 1440
+	Timp de raspuns:	5.0 [ms]
+	Functii speciale:	webcam, Aparat Electric: Monitor OLED
+
+	Producator:		LG
+	Pret:			234.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	85.0 [W]
+	Rata de refresh:	144.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		Wide
+	Rezolutie optima:	3840 x 2160
+	Timp de raspuns:	11.0 [ms]
+	Functii speciale:	ecran curbat, Aparat Electric: Monitor QLED
+
+	Producator:		Acer
+	Pret:			905.0 [lei]
+	Culoare:		Alb
+	Putere Consumata:	63.0 [W]
+	Rata de refresh:	75.0 [Hz]
+	Diagonala:		29.0 [inch]
+	Format ecran:		Wide
+	Rezolutie optima:	1920 x 1080
+	Timp de raspuns:	7.0 [ms]
+	Functii speciale:	webcam, Aparat Electric: Monitor OLED
+
+	Producator:		Philips
+	Pret:			4327.0 [lei]
+	Culoare:		Albastru
+	Putere Consumata:	65.0 [W]
+	Rata de refresh:	120.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		Wide
+	Rezolutie optima:	3840 x 2160
+	Timp de raspuns:	7.0 [ms]
+	Functii speciale:	ecran curbat, Aparat Electric: Monitor LCD
+
+	Producator:		LG
+	Pret:			2022.0 [lei]
+	Culoare:		Gri
+	Putere Consumata:	88.0 [W]
+	Rata de refresh:	240.0 [Hz]
+	Diagonala:		23.0 [inch]
+	Format ecran:		clasic
+	Rezolutie optima:	2560 x 1440
+	Timp de raspuns:	5.0 [ms]
+	Functii speciale:	webcam]
