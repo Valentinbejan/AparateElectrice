@@ -1,8 +1,3 @@
-#eclipse
-bin
-.settings/
-
-#netbeans
-build
-nbproject/private
-/target/
+/ProiectFinal/ProiectFinal/target/
+/ProiectFinal---ignora/ProiectFinal/target/
+/ProiectFinal/target/
