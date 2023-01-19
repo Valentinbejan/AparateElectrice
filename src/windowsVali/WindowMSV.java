@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import pachet.clase.valentin.MasinaSpalatVase;
 import pachet.clasegeneratoare.vali.GeneratorMasinaSpalatVase;
 
-/**
- *
- * @author sorin
- */
+
 public class WindowMSV extends javax.swing.JFrame {
 
     /**
