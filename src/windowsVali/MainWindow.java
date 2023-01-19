@@ -17,10 +17,7 @@ import pachet.clase.valentin.*;
 import pachet.clasefilter.vali.*;
 import pachet.clasegeneratoare.vali.*;
 import windowsVali.*;
-/**
- *
- * @author GABI
- */
+
 public class MainWindow extends javax.swing.JFrame {
 
     /**

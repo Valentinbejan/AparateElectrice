@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import pachet.clase.valentin.MasinaSpalatRufe;
 import pachet.clasegeneratoare.vali.GeneratorMasinaSpalatRufe;
 
-/**
- *
- * @author sorin
- */
+
 public class WindowMSR extends javax.swing.JFrame {
 
     /**
