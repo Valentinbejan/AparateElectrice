@@ -1,0 +1,131 @@
+[Aparat Electric: Fier de Calcat mini
+
+	Producator:		Braun
+	Pret:			95.0 [lei]
+	Culoare:		Albastru
+	Putere Consumata:	3238.0 [W]
+	Talpa:			STB
+	Latime:			59.0 [cm]
+	Lungime:		31.0 [cm]
+	Adancime:		47.0 [cm]
+	Lungime cablu:		47.0 [m]
+	Greutate:		92.0 [kg]
+	Debit de abur:		21.0 [g/min]
+	Functii:		functia anti picurare, Aparat Electric: Fier de Calcat orizontal
+
+	Producator:		Philips
+	Pret:			240.0 [lei]
+	Culoare:		Albastru
+	Putere Consumata:	3480.0 [W]
+	Talpa:			Iron
+	Latime:			95.0 [cm]
+	Lungime:		84.0 [cm]
+	Adancime:		61.0 [cm]
+	Lungime cablu:		27.0 [m]
+	Greutate:		52.0 [kg]
+	Debit de abur:		44.0 [g/min]
+	Functii:		functia anti picurare, Aparat Electric: Fier Calcat vertical
+
+	Producator:		Braun
+	Pret:			389.0 [lei]
+	Culoare:		Albastru
+	Putere Consumata:	3253.0 [W]
+	Talpa:			Prym
+	Latime:			45.0 [cm]
+	Lungime:		57.0 [cm]
+	Adancime:		20.0 [cm]
+	Lungime cablu:		3.0 [m]
+	Greutate:		89.0 [kg]
+	Debit de abur:		25.0 [g/min]
+	Functii:		functia de oprire automata, Aparat Electric: Fier de Calcat orizontal
+
+	Producator:		Braun
+	Pret:			67.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	742.0 [W]
+	Talpa:			Veronesi
+	Latime:			48.0 [cm]
+	Lungime:		21.0 [cm]
+	Adancime:		50.0 [cm]
+	Lungime cablu:		43.0 [m]
+	Greutate:		49.0 [kg]
+	Debit de abur:		70.0 [g/min]
+	Functii:		functia de oprire automata, Aparat Electric: Fier de Calcat orizontal
+
+	Producator:		Tefal
+	Pret:			74.0 [lei]
+	Culoare:		Verde
+	Putere Consumata:	1090.0 [W]
+	Talpa:			STB
+	Latime:			11.0 [cm]
+	Lungime:		50.0 [cm]
+	Adancime:		44.0 [cm]
+	Lungime cablu:		58.0 [m]
+	Greutate:		49.0 [kg]
+	Debit de abur:		51.0 [g/min]
+	Functii:		functia anti picurare, Aparat Electric: Fier Calcat vertical
+
+	Producator:		Hausberg
+	Pret:			290.0 [lei]
+	Culoare:		Verde
+	Putere Consumata:	1716.0 [W]
+	Talpa:			Iron
+	Latime:			43.0 [cm]
+	Lungime:		44.0 [cm]
+	Adancime:		13.0 [cm]
+	Lungime cablu:		22.0 [m]
+	Greutate:		49.0 [kg]
+	Debit de abur:		84.0 [g/min]
+	Functii:		functia anti picurare, Aparat Electric: Fier de Calcat orizontal
+
+	Producator:		Braun
+	Pret:			592.0 [lei]
+	Culoare:		Rosu
+	Putere Consumata:	2074.0 [W]
+	Talpa:			Iron
+	Latime:			85.0 [cm]
+	Lungime:		14.0 [cm]
+	Adancime:		42.0 [cm]
+	Lungime cablu:		1.0 [m]
+	Greutate:		54.0 [kg]
+	Debit de abur:		93.0 [g/min]
+	Functii:		functia de oprire automata, Aparat Electric: Fier de Calcat mini
+
+	Producator:		Philips
+	Pret:			290.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	2331.0 [W]
+	Talpa:			Iron
+	Latime:			3.0 [cm]
+	Lungime:		34.0 [cm]
+	Adancime:		3.0 [cm]
+	Lungime cablu:		43.0 [m]
+	Greutate:		36.0 [kg]
+	Debit de abur:		38.0 [g/min]
+	Functii:		functia de oprire automata, Aparat Electric: Fier de Calcat cu abur
+
+	Producator:		Philips
+	Pret:			416.0 [lei]
+	Culoare:		Verde
+	Putere Consumata:	3060.0 [W]
+	Talpa:			Iron
+	Latime:			93.0 [cm]
+	Lungime:		80.0 [cm]
+	Adancime:		56.0 [cm]
+	Lungime cablu:		99.0 [m]
+	Greutate:		28.0 [kg]
+	Debit de abur:		50.0 [g/min]
+	Functii:		functia de oprire automata, Aparat Electric: Fier Calcat vertical
+
+	Producator:		Tefal
+	Pret:			414.0 [lei]
+	Culoare:		Negru
+	Putere Consumata:	1287.0 [W]
+	Talpa:			Zola
+	Latime:			90.0 [cm]
+	Lungime:		28.0 [cm]
+	Adancime:		79.0 [cm]
+	Lungime cablu:		5.0 [m]
+	Greutate:		49.0 [kg]
+	Debit de abur:		78.0 [g/min]
+	Functii:		functia anti picurare]
