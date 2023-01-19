@@ -2,10 +2,11 @@ package pachet.clasegeneratoare.emil;
 
 import java.util.ArrayList;
 import java.util.Random;
-import pachet.clase.emil.*;
+
+import pachet.clase.emil.Aspirator;
 
 public class GeneratorAspiratoare {
-	private static char[] claseEmisiPraf = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G' };
+	private static char[] claseEmisiPraf = new char[] { 'A', 'B', 'C', 'D', 'E', 'F' };
 	private static String[] tipuri = new String[] { "vertical", "horizontal" };
 	private static String[] tipuriAspirare = new String[] { "umeda", "uscata" };
 	private static String[] tipuriCarcasa = new String[] { "plastic", "metal" };
@@ -21,9 +22,10 @@ public class GeneratorAspiratoare {
 	public static ArrayList<Aspirator> genereaza(int nrAspiratoare) {
 		ArrayList<Aspirator> listaAspiratoare = new ArrayList<Aspirator>();
 		Random r = new Random();
+
 		for (int i = 0; i < nrAspiratoare; i++) {
-			Aspirator a = new Aspirator("Aspirator" + (i + 1), "Producator" + (i + 1), r.nextDouble(1000),
-					culori[r.nextInt(culori.length)], r.nextDouble(1000));
+			Aspirator a = new Aspirator("Aspirator" + (i + 1), "Producator" + (i + 1), Math.max(100, r.nextInt(1000)),
+					culori[r.nextInt(culori.length)], Math.max(100, r.nextInt(1000)));
 			a.setClasaEmisiPraf(claseEmisiPraf[r.nextInt(claseEmisiPraf.length)]);
 			a.setTip(tipuri[r.nextInt(tipuri.length)]);
 			a.setTipAspirare(tipuriAspirare[r.nextInt(tipuriAspirare.length)]);
@@ -37,6 +39,14 @@ public class GeneratorAspiratoare {
 			listaAspiratoare.add(a);
 		}
 		return listaAspiratoare;
+	}
+
+	public static String[] getClaseEmisiPraf() {
+		String[] strings = new String[claseEmisiPraf.length];
+		for (int i = 0; i < claseEmisiPraf.length; i++) {
+			strings[i] = Character.toString(claseEmisiPraf[i]);
+		}
+		return strings;
 	}
 
 }

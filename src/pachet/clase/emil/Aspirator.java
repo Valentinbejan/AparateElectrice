@@ -3,6 +3,7 @@ package pachet.clase.emil;
 import pachet.clasa.abstracta.AparatElectric;
 
 public class Aspirator extends AparatElectric {
+	private static final long serialVersionUID = 5656L;
 	private char clasaEmisiPraf; // A //B //C
 	private String tip; // vertical //horizontal
 	private String tipAspirare; // umeda //uscata
@@ -88,7 +89,7 @@ public class Aspirator extends AparatElectric {
 		sir.append("\n\tTip carcasa: " + this.tipCarcasa);
 		sir.append("\n\tTip sac: " + this.tipSac);
 		sir.append("\n\tTip filtru: " + this.tipFiltru);
-		sir.append("\n\tCapacitate de colectare: " + this.capacitateDeColectare + " litri");
+		sir.append("\n\tCapacitate de colectare: " + this.capacitateDeColectare + " ml");
 		sir.append("\n\tGreutate: " + this.greutate + " [kg]");
 		sir.append("\n\tNivel zgomot: " + this.nivelZgomot + " [dB]");
 		sir.append("\n\tNumar filtre: " + this.nrFiltre + "\n\n");
