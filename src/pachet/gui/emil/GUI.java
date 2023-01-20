@@ -185,7 +185,7 @@ public class GUI extends JFrame {
 			String primaLinie = reader.readLine();
 			// testez daca prima linie a fisierului serializat
 			// contine numele clasei
-			if (primaLinie.contains(tempObj.getClass().getName())) {
+			if (primaLinie != null && primaLinie.contains(tempObj.getClass().getName())) {
 				FileInputStream fis = new FileInputStream(filePath);
 				ObjectInputStream ois = new ObjectInputStream(fis);
 				ArrayList<T> array = (ArrayList<T>) ois.readObject();
