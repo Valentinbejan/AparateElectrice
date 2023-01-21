@@ -1,8 +1,13 @@
 #eclipse
-bin
+bin/
 .settings/
+.project
+.classpath
+
+#maven
+target/
 
 #netbeans
-build
-nbproject/private
-/target/
+#build
+#nbproject/private
+
