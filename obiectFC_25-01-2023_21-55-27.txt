@@ -1,0 +1,16 @@
+Echipament electrocasnic:	Fier de Calcat mini
+
+	Producator:		Hausberg
+	Pret:			593.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	849.0 [W]
+	Talpa:			Philips
+	Latime:			64.0 [cm]
+	Lungime:		35.0 [cm]
+	Adancime:		72.0 [cm]
+	Lungime cablu:		67.0 [m]
+	Greutate:		3.0 [kg]
+	Debit de abur:		53.0 [g/min]
+	Functii:			functia de oprire automata
+
+

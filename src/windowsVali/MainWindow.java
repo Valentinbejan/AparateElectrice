@@ -73,7 +73,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Malgun Gothic", 0, 11)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(0, 0, 51));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fier de calcat", "Statie de calcat", "Masina de spalat vase", "Masina de spalat rufe", "Televizor", "Monitor", "Robot de bucatarie", "Aer conditionat", "Selecteaza o categorie" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fier de calcat", "Masina de spalat vase", "Masina de spalat rufe", "Monitor", "Aer conditionat", "Selecteaza o categorie" }));
         jComboBox1.setSelectedItem("Selecteaza o categorie");
         jComboBox1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

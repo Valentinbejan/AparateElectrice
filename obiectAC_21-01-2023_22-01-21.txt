@@ -1,0 +1,10 @@
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		MDV
+	Pret:			1633.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	2069.0 [W]
+	Clasa:			B
+	Arie Acoperita:		13.0 [m]
+	Consum telecomanda:	58.0 [W]
+

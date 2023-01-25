@@ -1,0 +1,20 @@
+Echipament electrocasnic:	 Aparate de aer conditionat de tip duct
+
+	Producator:		Gree
+	Pret:			98.0 [lei]
+	Culoare:			negru
+	Putere Consumata:	2719.0 [W]
+	Clasa:			B
+	Arie Acoperita:		7.0 [m]
+	Consum telecomanda:	58.0 [W]
+
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		Gree
+	Pret:			2816.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	2901.0 [W]
+	Clasa:			B
+	Arie Acoperita:		19.0 [m]
+	Consum telecomanda:	89.0 [W]
+

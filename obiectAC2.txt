@@ -1,0 +1,50 @@
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		MDV
+	Pret:			2256.0 [lei]
+	Culoare:			negru
+	Putere Consumata:	1379.0 [W]
+	Clasa:			A+
+	Arie Acoperita:		20.0 [m]
+	Consum telecomanda:	36.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		LG
+	Pret:			1303.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	948.0 [W]
+	Clasa:			D
+	Arie Acoperita:		15.0 [m]
+	Consum telecomanda:	41.0 [W]
+
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		LG
+	Pret:			2981.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	1639.0 [W]
+	Clasa:			A+++
+	Arie Acoperita:		16.0 [m]
+	Consum telecomanda:	72.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		Hitachi
+	Pret:			135.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	2657.0 [W]
+	Clasa:			A+
+	Arie Acoperita:		16.0 [m]
+	Consum telecomanda:	49.0 [W]
+
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		Hitachi
+	Pret:			388.0 [lei]
+	Culoare:			rosu
+	Putere Consumata:	2425.0 [W]
+	Clasa:			A+++
+	Arie Acoperita:		3.0 [m]
+	Consum telecomanda:	0.0 [W]
+

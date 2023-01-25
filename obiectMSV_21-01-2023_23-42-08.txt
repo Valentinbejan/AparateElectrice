@@ -1,0 +1,29 @@
+Echipament electrocasnic:	Masina de spalat vase standard
+
+	Producator:		Arctic
+	Pret:			3297.0 [lei]
+	Culoare:			Argintiu
+	Putere Consumata:	2316.0 [W]
+	Numar de seturi:		12
+	Latime cuva:		30.0 [cm]Echipament electrocasnic:	Masina de spalat vase standard
+
+	Producator:		Bosch
+	Pret:			3036.0 [lei]
+	Culoare:			Alb
+	Putere Consumata:	1221.0 [W]
+	Numar de seturi:		4
+	Latime cuva:		91.0 [cm]Echipament electrocasnic:	Masina de spalat vase compacta
+
+	Producator:		Whirlpool
+	Pret:			3058.0 [lei]
+	Culoare:			Alb
+	Putere Consumata:	1501.0 [W]
+	Numar de seturi:		1
+	Latime cuva:		64.0 [cm]Echipament electrocasnic:	Masina de spalat vase compacta
+
+	Producator:		Indesit
+	Pret:			3173.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	1942.0 [W]
+	Numar de seturi:		5
+	Latime cuva:		20.0 [cm]

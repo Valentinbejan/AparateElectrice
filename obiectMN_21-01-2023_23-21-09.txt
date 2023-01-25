@@ -1,0 +1,12 @@
+Echipament electrocasnic:	Monitor OLED
+
+	Producator:		Acer
+	Pret:			4050.0 [lei]
+	Culoare:			Albastru
+	Putere Consumata:	59.0 [W]
+	Rata de refresh:		120.0 [Hz]
+	Diagonala:		27.0 [inch]
+	Format ecran:		clasic
+	Rezolutie optima:		3840 x 2160
+	Timp de raspuns:	11.0 [ms]
+	Functii speciale:		touchscreen

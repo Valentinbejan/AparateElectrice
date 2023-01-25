@@ -1,0 +1,50 @@
+Echipament electrocasnic:	 Aparate de aer conditionat de tip duct
+
+	Producator:		LG
+	Pret:			798.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	1486.0 [W]
+	Clasa:			C
+	Arie Acoperita:		16.0 [m]
+	Consum telecomanda:	39.0 [W]
+
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		LG
+	Pret:			1263.0 [lei]
+	Culoare:			albastru
+	Putere Consumata:	2445.0 [W]
+	Clasa:			B
+	Arie Acoperita:		10.0 [m]
+	Consum telecomanda:	67.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		LG
+	Pret:			4241.0 [lei]
+	Culoare:			verde
+	Putere Consumata:	2335.0 [W]
+	Clasa:			A+++
+	Arie Acoperita:		5.0 [m]
+	Consum telecomanda:	46.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		LG
+	Pret:			1712.0 [lei]
+	Culoare:			galben
+	Putere Consumata:	319.0 [W]
+	Clasa:			B
+	Arie Acoperita:		15.0 [m]
+	Consum telecomanda:	80.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		LG
+	Pret:			2504.0 [lei]
+	Culoare:			galben
+	Putere Consumata:	576.0 [W]
+	Clasa:			C
+	Arie Acoperita:		8.0 [m]
+	Consum telecomanda:	35.0 [W]
+

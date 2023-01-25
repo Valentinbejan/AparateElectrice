@@ -1,0 +1,100 @@
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		MDV
+	Pret:			1213.0 [lei]
+	Culoare:			rosu
+	Putere Consumata:	2884.0 [W]
+	Clasa:			A++
+	Arie Acoperita:		8.0 [m]
+	Consum telecomanda:	53.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip split
+
+	Producator:		MDV
+	Pret:			3440.0 [lei]
+	Culoare:			galben
+	Putere Consumata:	1230.0 [W]
+	Clasa:			B
+	Arie Acoperita:		12.0 [m]
+	Consum telecomanda:	62.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		Hitachi
+	Pret:			419.0 [lei]
+	Culoare:			alb
+	Putere Consumata:	2231.0 [W]
+	Clasa:			D
+	Arie Acoperita:		12.0 [m]
+	Consum telecomanda:	33.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		Hitachi
+	Pret:			4233.0 [lei]
+	Culoare:			negru
+	Putere Consumata:	2168.0 [W]
+	Clasa:			A++
+	Arie Acoperita:		14.0 [m]
+	Consum telecomanda:	82.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		LG
+	Pret:			1976.0 [lei]
+	Culoare:			galben
+	Putere Consumata:	1499.0 [W]
+	Clasa:			B
+	Arie Acoperita:		18.0 [m]
+	Consum telecomanda:	93.0 [W]
+
+Echipament electrocasnic:	 Aparate de aer conditionat de tip duct
+
+	Producator:		MDV
+	Pret:			1878.0 [lei]
+	Culoare:			verde
+	Putere Consumata:	2849.0 [W]
+	Clasa:			B
+	Arie Acoperita:		4.0 [m]
+	Consum telecomanda:	2.0 [W]
+
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		Hitachi
+	Pret:			389.0 [lei]
+	Culoare:			rosu
+	Putere Consumata:	168.0 [W]
+	Clasa:			C
+	Arie Acoperita:		13.0 [m]
+	Consum telecomanda:	25.0 [W]
+
+Echipament electrocasnic:	 Aparate de aer conditionat de tip duct
+
+	Producator:		Hitachi
+	Pret:			1257.0 [lei]
+	Culoare:			rosu
+	Putere Consumata:	1443.0 [W]
+	Clasa:			D
+	Arie Acoperita:		13.0 [m]
+	Consum telecomanda:	72.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		Daikin
+	Pret:			4018.0 [lei]
+	Culoare:			negru
+	Putere Consumata:	2636.0 [W]
+	Clasa:			A+++
+	Arie Acoperita:		3.0 [m]
+	Consum telecomanda:	24.0 [W]
+
+Echipament electrocasnic:	Aparate de aer conditionat de tip caseta
+
+	Producator:		Hitachi
+	Pret:			4002.0 [lei]
+	Culoare:			negru
+	Putere Consumata:	1251.0 [W]
+	Clasa:			B
+	Arie Acoperita:		18.0 [m]
+	Consum telecomanda:	70.0 [W]
+

@@ -1,0 +1,32 @@
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		Tefal
+	Pret:			373.0 [lei]
+	Culoare:			Galben
+	Putere Consumata:	3431.0 [W]
+	Talpa:			Iron
+	Latime:			66.0 [cm]
+	Lungime:		27.0 [cm]
+	Adancime:		89.0 [cm]
+	Lungime cablu:		31.0 [m]
+	Greutate:		32.0 [kg]
+	Debit de abur:		85.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat cu abur
+
+	Producator:		Tefal
+	Pret:			428.0 [lei]
+	Culoare:			Albastru
+	Putere Consumata:	2368.0 [W]
+	Talpa:			Philips
+	Latime:			92.0 [cm]
+	Lungime:		8.0 [cm]
+	Adancime:		38.0 [cm]
+	Lungime cablu:		69.0 [m]
+	Greutate:		34.0 [kg]
+	Debit de abur:		88.0 [g/min]
+	Functii:			functia anti picurare
+
+

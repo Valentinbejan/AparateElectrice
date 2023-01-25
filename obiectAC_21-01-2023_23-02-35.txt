@@ -1,0 +1,32 @@
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Zilian
+	Pret:			230.0 [lei]
+	Culoare:			Rosu
+	Putere Consumata:	2715.0 [W]
+	Talpa:			STB
+	Latime:			78.0 [cm]
+	Lungime:		29.0 [cm]
+	Adancime:		17.0 [cm]
+	Lungime cablu:		37.0 [m]
+	Greutate:		52.0 [kg]
+	Debit de abur:		60.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Zilian
+	Pret:			212.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	1076.0 [W]
+	Talpa:			Philips
+	Latime:			20.0 [cm]
+	Lungime:		70.0 [cm]
+	Adancime:		87.0 [cm]
+	Lungime cablu:		94.0 [m]
+	Greutate:		81.0 [kg]
+	Debit de abur:		95.0 [g/min]
+	Functii:			functia de oprire automata
+
+

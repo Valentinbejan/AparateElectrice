@@ -1,0 +1,16 @@
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		Braun
+	Pret:			600.0 [lei]
+	Culoare:			Galben
+	Putere Consumata:	3016.0 [W]
+	Talpa:			Zola
+	Latime:			14.0 [cm]
+	Lungime:		84.0 [cm]
+	Adancime:		49.0 [cm]
+	Lungime cablu:		7.0 [m]
+	Greutate:		2.0 [kg]
+	Debit de abur:		29.0 [g/min]
+	Functii:			functia de oprire automata
+
+

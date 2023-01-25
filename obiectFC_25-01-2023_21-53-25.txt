@@ -1,0 +1,48 @@
+Echipament electrocasnic:	Fier de Calcat cu abur
+
+	Producator:		Tefal
+	Pret:			248.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	1821.0 [W]
+	Talpa:			Iron
+	Latime:			84.0 [cm]
+	Lungime:		66.0 [cm]
+	Adancime:		57.0 [cm]
+	Lungime cablu:		51.0 [m]
+	Greutate:		41.0 [kg]
+	Debit de abur:		77.0 [g/min]
+	Functii:			functia de oprire automata
+
+
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		OEM
+	Pret:			32.0 [lei]
+	Culoare:			Albastru
+	Putere Consumata:	1989.0 [W]
+	Talpa:			Iron
+	Latime:			43.0 [cm]
+	Lungime:		11.0 [cm]
+	Adancime:		57.0 [cm]
+	Lungime cablu:		36.0 [m]
+	Greutate:		97.0 [kg]
+	Debit de abur:		25.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Tefal
+	Pret:			367.0 [lei]
+	Culoare:			Galben
+	Putere Consumata:	1160.0 [W]
+	Talpa:			Iron
+	Latime:			21.0 [cm]
+	Lungime:		17.0 [cm]
+	Adancime:		13.0 [cm]
+	Lungime cablu:		91.0 [m]
+	Greutate:		91.0 [kg]
+	Debit de abur:		76.0 [g/min]
+	Functii:			functia de oprire automata
+
+

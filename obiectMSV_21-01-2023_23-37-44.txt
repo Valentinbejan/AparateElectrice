@@ -1,0 +1,8 @@
+Echipament electrocasnic:	Masina de spalat vase standard
+
+	Producator:		Arctic
+	Pret:			3151.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	1761.0 [W]
+	Numar de seturi:		4
+	Latime cuva:		34.0 [cm]

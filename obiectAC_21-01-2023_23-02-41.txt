@@ -1,0 +1,32 @@
+Echipament electrocasnic:	Fier de Calcat mini
+
+	Producator:		Zilian
+	Pret:			123.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	869.0 [W]
+	Talpa:			Zola
+	Latime:			82.0 [cm]
+	Lungime:		67.0 [cm]
+	Adancime:		36.0 [cm]
+	Lungime cablu:		34.0 [m]
+	Greutate:		14.0 [kg]
+	Debit de abur:		63.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat cu abur
+
+	Producator:		Zilian
+	Pret:			92.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	674.0 [W]
+	Talpa:			Zola
+	Latime:			37.0 [cm]
+	Lungime:		5.0 [cm]
+	Adancime:		86.0 [cm]
+	Lungime cablu:		83.0 [m]
+	Greutate:		77.0 [kg]
+	Debit de abur:		99.0 [g/min]
+	Functii:			functia de oprire automata
+
+
