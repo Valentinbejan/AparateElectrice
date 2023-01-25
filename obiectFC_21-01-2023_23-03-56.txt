@@ -1,0 +1,48 @@
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Zilian
+	Pret:			429.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	2441.0 [W]
+	Talpa:			Zola
+	Latime:			66.0 [cm]
+	Lungime:		80.0 [cm]
+	Adancime:		29.0 [cm]
+	Lungime cablu:		28.0 [m]
+	Greutate:		8.0 [kg]
+	Debit de abur:		34.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat cu abur
+
+	Producator:		Braun
+	Pret:			522.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	1133.0 [W]
+	Talpa:			STB
+	Latime:			50.0 [cm]
+	Lungime:		79.0 [cm]
+	Adancime:		59.0 [cm]
+	Lungime cablu:		8.0 [m]
+	Greutate:		29.0 [kg]
+	Debit de abur:		77.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat mini
+
+	Producator:		Philips
+	Pret:			252.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	3267.0 [W]
+	Talpa:			STB
+	Latime:			29.0 [cm]
+	Lungime:		10.0 [cm]
+	Adancime:		78.0 [cm]
+	Lungime cablu:		20.0 [m]
+	Greutate:		69.0 [kg]
+	Debit de abur:		85.0 [g/min]
+	Functii:			functia de oprire automata
+
+

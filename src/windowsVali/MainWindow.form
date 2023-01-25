@@ -159,16 +159,13 @@
                   <Color blue="33" green="0" red="0" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="9">
+                  <StringArray count="6">
                     <StringItem index="0" value="Fier de calcat"/>
-                    <StringItem index="1" value="Statie de calcat"/>
-                    <StringItem index="2" value="Masina de spalat vase"/>
-                    <StringItem index="3" value="Masina de spalat rufe"/>
-                    <StringItem index="4" value="Televizor"/>
-                    <StringItem index="5" value="Monitor"/>
-                    <StringItem index="6" value="Robot de bucatarie"/>
-                    <StringItem index="7" value="Aer conditionat"/>
-                    <StringItem index="8" value="Selecteaza o categorie"/>
+                    <StringItem index="1" value="Masina de spalat vase"/>
+                    <StringItem index="2" value="Masina de spalat rufe"/>
+                    <StringItem index="3" value="Monitor"/>
+                    <StringItem index="4" value="Aer conditionat"/>
+                    <StringItem index="5" value="Selecteaza o categorie"/>
                   </StringArray>
                 </Property>
                 <Property name="selectedItem" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">

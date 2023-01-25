@@ -1,0 +1,80 @@
+Echipament electrocasnic:	Fier de Calcat cu abur
+
+	Producator:		Tefal
+	Pret:			392.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	771.0 [W]
+	Talpa:			Iron
+	Latime:			16.0 [cm]
+	Lungime:		83.0 [cm]
+	Adancime:		29.0 [cm]
+	Lungime cablu:		47.0 [m]
+	Greutate:		55.0 [kg]
+	Debit de abur:		40.0 [g/min]
+	Functii:			functia de oprire automata
+
+
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Zilian
+	Pret:			122.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	1877.0 [W]
+	Talpa:			Iron
+	Latime:			90.0 [cm]
+	Lungime:		38.0 [cm]
+	Adancime:		52.0 [cm]
+	Lungime cablu:		94.0 [m]
+	Greutate:		56.0 [kg]
+	Debit de abur:		28.0 [g/min]
+	Functii:			functia de oprire automata
+
+
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		Braun
+	Pret:			242.0 [lei]
+	Culoare:			Rosu
+	Putere Consumata:	1591.0 [W]
+	Talpa:			Iron
+	Latime:			89.0 [cm]
+	Lungime:		5.0 [cm]
+	Adancime:		70.0 [cm]
+	Lungime cablu:		37.0 [m]
+	Greutate:		84.0 [kg]
+	Debit de abur:		0.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat mini
+
+	Producator:		Hausberg
+	Pret:			250.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	2279.0 [W]
+	Talpa:			Iron
+	Latime:			92.0 [cm]
+	Lungime:		66.0 [cm]
+	Adancime:		9.0 [cm]
+	Lungime cablu:		91.0 [m]
+	Greutate:		62.0 [kg]
+	Debit de abur:		44.0 [g/min]
+	Functii:			functia anti picurare
+
+
+Echipament electrocasnic:	Fier de Calcat orizontal
+
+	Producator:		Braun
+	Pret:			145.0 [lei]
+	Culoare:			Albastru
+	Putere Consumata:	1664.0 [W]
+	Talpa:			Iron
+	Latime:			93.0 [cm]
+	Lungime:		13.0 [cm]
+	Adancime:		75.0 [cm]
+	Lungime cablu:		31.0 [m]
+	Greutate:		54.0 [kg]
+	Debit de abur:		11.0 [g/min]
+	Functii:			functia anti picurare
+
+

@@ -1,0 +1,90 @@
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		MDV
+	Pret:			1947.0 [lei]
+	Culoare:		verde
+	Putere Consumata:	2264.0 [W]
+	Clasa:			C
+	Arie Acoperita:		2.0 [m]
+	Consum telecomanda:	20.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		Vivax
+	Pret:			1883.0 [lei]
+	Culoare:		albastru
+	Putere Consumata:	2999.0 [W]
+	Clasa:			D
+	Arie Acoperita:		16.0 [m]
+	Consum telecomanda:	40.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		Hitachi
+	Pret:			393.0 [lei]
+	Culoare:		albastru
+	Putere Consumata:	1206.0 [W]
+	Clasa:			A+
+	Arie Acoperita:		6.0 [m]
+	Consum telecomanda:	93.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		Gree
+	Pret:			4365.0 [lei]
+	Culoare:		rosu
+	Putere Consumata:	1799.0 [W]
+	Clasa:			C
+	Arie Acoperita:		4.0 [m]
+	Consum telecomanda:	68.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		Hitachi
+	Pret:			1449.0 [lei]
+	Culoare:		rosu
+	Putere Consumata:	1518.0 [W]
+	Clasa:			A++
+	Arie Acoperita:		8.0 [m]
+	Consum telecomanda:	45.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		MDV
+	Pret:			2812.0 [lei]
+	Culoare:		galben
+	Putere Consumata:	451.0 [W]
+	Clasa:			B
+	Arie Acoperita:		7.0 [m]
+	Consum telecomanda:	42.0 [W]
+Aparat Electric: Aparate de aer conditionat de tip caseta
+
+	Producator:		Gree
+	Pret:			3475.0 [lei]
+	Culoare:		albastru
+	Putere Consumata:	211.0 [W]
+	Clasa:			A+
+	Arie Acoperita:		11.0 [m]
+	Consum telecomanda:	71.0 [W]
+Aparat Electric: Aparate de aer conditionat de tip split
+
+	Producator:		Hitachi
+	Pret:			2910.0 [lei]
+	Culoare:		negru
+	Putere Consumata:	679.0 [W]
+	Clasa:			D
+	Arie Acoperita:		14.0 [m]
+	Consum telecomanda:	58.0 [W]
+Aparat Electric: Aparatele de aer conditionat mobile
+
+	Producator:		LG
+	Pret:			2594.0 [lei]
+	Culoare:		negru
+	Putere Consumata:	1346.0 [W]
+	Clasa:			C
+	Arie Acoperita:		16.0 [m]
+	Consum telecomanda:	6.0 [W]
+Aparat Electric: Aparate de aer conditionat de tip caseta
+
+	Producator:		Vivax
+	Pret:			1245.0 [lei]
+	Culoare:		verde
+	Putere Consumata:	2438.0 [W]
+	Clasa:			C
+	Arie Acoperita:		14.0 [m]
+	Consum telecomanda:	46.0 [W]

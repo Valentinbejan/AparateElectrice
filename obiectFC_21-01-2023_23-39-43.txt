@@ -1,0 +1,16 @@
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		Tefal
+	Pret:			210.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	2348.0 [W]
+	Talpa:			Zola
+	Latime:			17.0 [cm]
+	Lungime:		62.0 [cm]
+	Adancime:		79.0 [cm]
+	Lungime cablu:		41.0 [m]
+	Greutate:		3.0 [kg]
+	Debit de abur:		98.0 [g/min]
+	Functii:			functia anti picurare
+
+

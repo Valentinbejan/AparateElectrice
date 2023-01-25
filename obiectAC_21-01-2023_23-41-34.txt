@@ -1,0 +1,10 @@
+Echipament electrocasnic:	Aparatele de aer conditionat mobile
+
+	Producator:		LG
+	Pret:			3291.0 [lei]
+	Culoare:			rosu
+	Putere Consumata:	2374.0 [W]
+	Clasa:			A+
+	Arie Acoperita:		15.0 [m]
+	Consum telecomanda:	45.0 [W]
+

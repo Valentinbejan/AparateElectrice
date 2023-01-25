@@ -5,7 +5,17 @@
  */
 package windowsVali;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 import pachet.clase.valentin.Monitor;
 import pachet.clasegeneratoare.vali.GeneratorMonitor;
 
@@ -41,6 +51,8 @@ public class WindowMN extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jComboBox5 = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         textArea1 = new java.awt.TextArea();
 
@@ -172,6 +184,22 @@ public class WindowMN extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, -1, -1));
 
+        jButton3.setText("Import");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
+
+        jButton4.setText("Export");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
+
         jPanel2.setBackground(new java.awt.Color(255, 102, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 204, 204), new java.awt.Color(204, 0, 0)), "Rezultate", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -256,14 +284,99 @@ public class WindowMN extends javax.swing.JFrame {
             if(jComboBox5.getSelectedItem() != "Selecteaza o categorie"&& jComboBox5.getSelectedIndex() == 3  && obiectMN[i].getRataRefresh() != 120) valid = false;
             if(jComboBox5.getSelectedItem() != "Selecteaza o categorie"&& jComboBox5.getSelectedIndex() == 4  && obiectMN[i].getRataRefresh() != 144) valid = false;
             if(jComboBox5.getSelectedItem() != "Selecteaza o categorie"&& jComboBox5.getSelectedIndex() == 5  && obiectMN[i].getRataRefresh() != 240) valid = false;
-            
+            /*
             if(valid) {
                 textArea1.append(obiectMN[i].afisare());
                 verificareText = false;
             }
+            */
+            
+            if(valid) {
+                 //textArea1.append(obiectMN[i].afisare());
+                // verificareText = false;
+                
+
+Date date = new Date();
+SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss");
+String fileName = "obiectMN_" + formatter.format(date) + ".txt";
+File file = new File(fileName);
+FileWriter writer = null;
+                
+
+
+                try {
+                    writer = new FileWriter(file,true);
+                } catch (IOException ex) {
+                    Logger.getLogger(WindowMN.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+
+                try {
+                   
+                    writer.write(obiectMN[i].afisare());
+                } catch (IOException ex) {
+                    Logger.getLogger(WindowMN.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                try {
+                    writer.close();
+                } catch (IOException ex) {
+                    Logger.getLogger(WindowMN.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+                  
+                textArea1.append(obiectMN[i].afisare());
+                 verificareText = false;
+            }
+            
+            
+            
+            
+            
+            
         }
         if(verificareText) textArea1.append("Nu s-a gasit niciun rezultat!");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        int returnVal = chooser.showOpenDialog(null);
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+            try {
+                File file = chooser.getSelectedFile();
+                FileReader reader = new FileReader(file);
+                BufferedReader bufferedReader = new BufferedReader(reader);
+
+                textArea1.setText(null);
+                String line;
+                while((line = bufferedReader.readLine()) != null) {
+                    textArea1.append(line + System.lineSeparator());
+                }
+                bufferedReader.close();
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        int returnVal = chooser.showSaveDialog(null);
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+            try {
+                File file = chooser.getSelectedFile();
+                FileWriter writer = new FileWriter(file);
+                writer.write(textArea1.getText());
+                writer.close();
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -304,6 +417,8 @@ public class WindowMN extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;

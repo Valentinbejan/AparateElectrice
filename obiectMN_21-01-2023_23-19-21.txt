@@ -1,0 +1,23 @@
+Echipament electrocasnic:	Monitor LCD
+
+	Producator:		Samsung
+	Pret:			2407.0 [lei]
+	Culoare:			Auriu
+	Putere Consumata:	74.0 [W]
+	Rata de refresh:		60.0 [Hz]
+	Diagonala:		25.0 [inch]
+	Format ecran:		ultraWide
+	Rezolutie optima:		1920 x 1080
+	Timp de raspuns:	5.0 [ms]
+	Functii speciale:		webcamEchipament electrocasnic:	Monitor OLED
+
+	Producator:		Samsung
+	Pret:			224.0 [lei]
+	Culoare:			Negru
+	Putere Consumata:	53.0 [W]
+	Rata de refresh:		144.0 [Hz]
+	Diagonala:		29.0 [inch]
+	Format ecran:		ultraWide
+	Rezolutie optima:		1920 x 1080
+	Timp de raspuns:	9.0 [ms]
+	Functii speciale:		ecran curbat

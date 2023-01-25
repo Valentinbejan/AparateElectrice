@@ -1,0 +1,16 @@
+Echipament electrocasnic:	Fier Calcat vertical
+
+	Producator:		Zilian
+	Pret:			63.0 [lei]
+	Culoare:			Verde
+	Putere Consumata:	1351.0 [W]
+	Talpa:			Iron
+	Latime:			52.0 [cm]
+	Lungime:		51.0 [cm]
+	Adancime:		49.0 [cm]
+	Lungime cablu:		83.0 [m]
+	Greutate:		89.0 [kg]
+	Debit de abur:		34.0 [g/min]
+	Functii:			functia de oprire automata
+
+
