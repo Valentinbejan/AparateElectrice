@@ -5,6 +5,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class RobotBucatarie extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
+	
 	private float capacitate;
 	private int numarViteze;
 	private int numarUstensile;
@@ -47,6 +48,43 @@ public class RobotBucatarie extends AparatElectric {
 		this.nivelZgomot = robotBucatarie.nivelZgomot;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sir = new StringBuilder();
+
+		// sir.append(super.toString());
+		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
+		sir.append("\n\tProducator: \t\t" + getProducator());
+		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
+		sir.append("\n\tCuloare: \t\t" + getCuloare());
+		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
+		sir.append("\n\tCapacitate: \t\t" + this.capacitate + " litri");
+		sir.append("\n\tNumar viteze: \t\t" + this.numarViteze);
+		sir.append("\n\tNumar ustensile: \t" + this.numarUstensile);
+		sir.append("\n\tNivel zgomot: \t\t" + this.nivelZgomot + " [dB]\n\n");
+
+		return sir.toString();
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// returnam un nou obiect identic folosind constructorul de copiere
+		RobotBucatarie clona = new RobotBucatarie(this);
+		return clona;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi * 30;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeZi(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi;
+	}
+
+	// Metode setters si getters:
+
 	public float getCapacitate() {
 		return capacitate;
 	}
@@ -77,42 +115,6 @@ public class RobotBucatarie extends AparatElectric {
 
 	public void setNivelZgomot(int nivelZgomot) {
 		this.nivelZgomot = nivelZgomot;
-	}
-
-	@Override
-	public String toString() {
-		StringBuilder sir = new StringBuilder();
-
-		// sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tCapacitate: \t\t" + this.capacitate + " litri");
-		sir.append("\n\tNumar viteze: \t\t" + this.numarViteze);
-		sir.append("\n\tNumar ustensile: \t" + this.numarUstensile);
-		sir.append("\n\tNivel zgomot: \t\t" + this.nivelZgomot + " [dB]\n\n");
-
-		return sir.toString();
-	}
-
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// folosim contructorul de copiere
-		// urmat de "new" pentru a creea un nou obiect
-		RobotBucatarie clona = new RobotBucatarie(this);
-		return clona;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi * 30;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeZi(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi;
 	}
 
 }

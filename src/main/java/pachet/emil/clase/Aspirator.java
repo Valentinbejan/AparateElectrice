@@ -4,6 +4,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class Aspirator extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
+	
 	private char clasaEmisiPraf; // A //B //C
 	private String tip; // vertical //horizontal
 	private String tipAspirare; // umeda //uscata
@@ -83,7 +84,6 @@ public class Aspirator extends AparatElectric {
 	public String toString() {
 		StringBuilder sir = new StringBuilder();
 		// sir.append(super.toString());
-
 		sir.append("\nAparat electric:\t\t" + getNumeProdus());
 		sir.append("\n\tProducator:\t\t" + getProducator());
 		sir.append("\n\tPret:\t\t" + getPret() + "[lei]");
@@ -105,10 +105,20 @@ public class Aspirator extends AparatElectric {
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		// folosim contructorul de copiere
-		// urmat de "new" pentru a creea un nou obiect
+		// returnam un nou obiect identic folosind constructorul de copiere
 		Aspirator clona = new Aspirator(this);
 		return clona;
+	}
+
+	// metode suprascrise din clasa abstracta
+	@Override
+	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi * 30;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeZi(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi;
 	}
 
 	// Metode getters si setters
@@ -190,17 +200,6 @@ public class Aspirator extends AparatElectric {
 
 	public void setNrFiltre(int nrFiltre) {
 		this.nrFiltre = nrFiltre;
-	}
-
-	// metode suprascrise din clasa abstracta
-	@Override
-	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi * 30;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeZi(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi;
 	}
 
 }

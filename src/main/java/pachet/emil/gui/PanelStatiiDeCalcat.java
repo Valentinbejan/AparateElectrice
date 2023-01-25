@@ -14,14 +14,14 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import pachet.clasegeneratoare.emil.GeneratorStatiiCalcat;
 import pachet.emil.clase.StatieCalcat;
 import pachet.emil.clasefilter.StatieCalcatFilter;
+import pachet.emil.clasegeneratoare.GeneratorStatiiCalcat;
 
 public class PanelStatiiDeCalcat extends JPanel {
 	private static final long serialVersionUID = 5656L;
-	private JComboBox<String> comboBox1 = new JComboBox<>();
-	private JComboBox<String> comboBox2 = new JComboBox<>();
+	private static JComboBox<String> comboBox1 = new JComboBox<>();
+	private static JComboBox<String> comboBox2 = new JComboBox<>();
 
 	public PanelStatiiDeCalcat() {
 		setLayout(null); //absolute

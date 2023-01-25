@@ -1,4 +1,4 @@
-package pachet.clasegeneratoare.emil;
+package pachet.emil.clasegeneratoare;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,10 +6,6 @@ import java.util.Random;
 import pachet.emil.clase.RobotBucatarie;
 
 public class GeneratorRobotiBucatarie {
-//	private double capacitate;
-//	private double numarViteze;
-//	private double numarUstensile;
-//	private int nivelZgomot; 48 - 80
 
 	private static float capacitati[] = new float[] { 0.5f, 1, 1.5f, 2, 2.5f, 3, 3.5f, 4, 4.5f, 5 };
 	private static int numereViteze[] = new int[] { 1, 2, 3, 4, 5, 6 };

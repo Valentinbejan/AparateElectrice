@@ -9,10 +9,9 @@ public class AspiratorFilter {
 			int capacitateDeColectare) {
 
 		ArrayList<Aspirator> lista_filtrata = new ArrayList<>();
-		for (Aspirator obj : listaAspiratoare) {
+		for (Aspirator obj : listaAspiratoare)
 			if (obj.getCapacitateDeColectare() <= capacitateDeColectare)
 				lista_filtrata.add(obj);
-		}
 
 		return lista_filtrata;
 	}
@@ -22,12 +21,10 @@ public class AspiratorFilter {
 
 		ArrayList<Aspirator> lista_filtrata = new ArrayList<>();
 		char clasaEmisiPraf_ = Character.toUpperCase(clasaEmisiPraf);
-		for (Aspirator obj : listaAspiratoare) {
+		for (Aspirator obj : listaAspiratoare)
 			if (obj.getClasaEmisiPraf() == clasaEmisiPraf_)
 				lista_filtrata.add(obj);
-		}
 
 		return lista_filtrata;
 	}
-
 }

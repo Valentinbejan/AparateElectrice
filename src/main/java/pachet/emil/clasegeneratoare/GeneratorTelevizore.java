@@ -1,4 +1,4 @@
-package pachet.clasegeneratoare.emil;
+package pachet.emil.clasegeneratoare;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,14 +6,6 @@ import java.util.Random;
 import pachet.emil.clase.Televizor;
 
 public class GeneratorTelevizore {
-//	private String tipTV; // ex:Clasic, SmartTV,SmartTV 3D,
-//	private String tehnologieAudio; // ex: Fara, Dolby Digital, Dolby Digital Plus, Dolby Atmos
-//	private double greutate;// ex:13,5 kg
-//	private double diagonalaEcran; // ex:80cm, 125cm
-//	private String tehnologieDisplay;// ex:LCD,LED,OLED
-//	private String rezolutie;// ex:HD,FullHD,UltraHD4K
-//	private String tipDisplay;// ex:plat, curbat
-
 	private static String[] tipuriTV = new String[] { "Clasic", "SmartTV", "SmartTV 3D" };
 
 	private static String[] tehnologiiAudio = new String[] { "Fara", "Dolby Digital", "Dolby Digital Plus",

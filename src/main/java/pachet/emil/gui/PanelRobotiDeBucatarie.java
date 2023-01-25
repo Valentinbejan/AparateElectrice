@@ -13,17 +13,17 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import pachet.clasegeneratoare.emil.GeneratorRobotiBucatarie;
 import pachet.emil.clase.RobotBucatarie;
 import pachet.emil.clasefilter.RobotBucatarieFilter;
+import pachet.emil.clasegeneratoare.GeneratorRobotiBucatarie;
 
 public class PanelRobotiDeBucatarie extends JPanel {
 	private static final long serialVersionUID = 5656L;
-	private JTextField metoda1TextField = new JTextField();
-	private JTextField metoda2TextField = new JTextField();
+	private static JTextField metoda1TextField = new JTextField();
+	private static JTextField metoda2TextField = new JTextField();
 
 	public PanelRobotiDeBucatarie() {
-		setLayout(null); //absolute
+		setLayout(null); // absolute
 		adaugaButoaneImportExport();
 		adaugaGenerarea();
 		adaugaFiltrarea();

@@ -8,6 +8,7 @@ public class StatieCalcatFilter {
 
 	public static ArrayList<StatieCalcat> filtreazaDupaMaterialTalpa(ArrayList<StatieCalcat> listaStatieCalcat,
 			String materialTalpa) {
+
 		ArrayList<StatieCalcat> lista_filtrata = new ArrayList<>();
 		for (StatieCalcat obj : listaStatieCalcat)
 			if (obj.getMaterialTalpa().equals(materialTalpa))
@@ -18,6 +19,7 @@ public class StatieCalcatFilter {
 
 	public static ArrayList<StatieCalcat> filtreazaDupaFunctie(ArrayList<StatieCalcat> listaStatieCalcat,
 			String functie) {
+
 		ArrayList<StatieCalcat> lista_filtrata = new ArrayList<>();
 		for (StatieCalcat obj : listaStatieCalcat)
 			if (obj.getFunctie().equals(functie))

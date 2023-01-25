@@ -1,4 +1,4 @@
-package pachet.clasegeneratoare.emil;
+package pachet.emil.clasegeneratoare;
 
 import java.util.ArrayList;
 import java.util.Random;

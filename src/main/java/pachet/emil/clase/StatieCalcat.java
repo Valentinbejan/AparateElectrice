@@ -5,6 +5,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class StatieCalcat extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
+
 	private String tip; // vertical //horizontal
 	private String materialTalpa; // teflon //ceramica //inox
 	private String tip_panou_de_comanda; // mecanic //digital
@@ -58,6 +59,44 @@ public class StatieCalcat extends AparatElectric {
 		this.functie = s.functie;
 		this.capacitate_rezervor_apa = s.capacitate_rezervor_apa;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder sir = new StringBuilder();
+		// sir.append(super.toString());
+		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
+		sir.append("\n\tProducator: \t\t" + getProducator());
+		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
+		sir.append("\n\tCuloare: \t\t" + getCuloare());
+		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
+		sir.append("\n\tTip: \t\t" + this.tip);
+		sir.append("\n\tMaterial talpa: \t\t" + this.materialTalpa);
+		sir.append("\n\tTip panou de comanda: \t" + this.tip_panou_de_comanda);
+		sir.append("\n\tGreutate: \t\t" + this.greutate + " kg");
+		sir.append("\n\tFunctie: \t\t" + this.functie);
+		sir.append("\n\tCapacitate rezervor apa: \t" + this.capacitate_rezervor_apa + " L\n\n");
+
+		return sir.toString();
+
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// returnam un nou obiect identic folosind constructorul de copiere
+		StatieCalcat clona = new StatieCalcat(this);
+		return clona;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi * 30;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeZi(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi;
+	}
+
 	// Metode setters si getters:
 
 	public String getTip() {
@@ -106,45 +145,6 @@ public class StatieCalcat extends AparatElectric {
 
 	public void setCapacitate_rezervor_apa(double capacitate_rezervor_apa) {
 		this.capacitate_rezervor_apa = capacitate_rezervor_apa;
-	}
-
-	// Supraincarcarea metodei toString:
-	@Override
-	public String toString() {
-		StringBuilder sir = new StringBuilder();
-		// sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tTip: \t\t" + this.tip);
-		sir.append("\n\tMaterial talpa: \t\t" + this.materialTalpa);
-		sir.append("\n\tTip panou de comanda: \t" + this.tip_panou_de_comanda);
-		sir.append("\n\tGreutate: \t\t" + this.greutate + " kg");
-		sir.append("\n\tFunctie: \t\t" + this.functie);
-		sir.append("\n\tCapacitate rezervor apa: \t" + this.capacitate_rezervor_apa + " L\n\n");
-
-		return sir.toString();
-
-	}
-
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// folosim contructorul de copiere
-		// urmat de "new" pentru a creea un nou obiect
-		StatieCalcat clona = new StatieCalcat(this);
-		return clona;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi * 30;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeZi(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi;
 	}
 
 }

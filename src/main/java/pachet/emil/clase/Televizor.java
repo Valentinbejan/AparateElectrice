@@ -4,6 +4,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class Televizor extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
+	
 	private String tipTV; // ex:Clasic, SmartTV,SmartTV 3D,
 	private String tehnologieAudio; // ex: Fara, Dolby Digital, Dolby Digital Plus, Dolby Atmos
 	private double greutate;// ex:13,5 kg
@@ -62,6 +63,44 @@ public class Televizor extends AparatElectric {
 		this.tipDisplay = t.tipDisplay;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sir = new StringBuilder();
+		// sir.append(super.toString());
+		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
+		sir.append("\n\tProducator: \t\t" + getProducator());
+		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
+		sir.append("\n\tCuloare: \t\t" + getCuloare());
+		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
+		sir.append("\n\tTipTV: \t\t" + tipTV);
+		sir.append("\n\tTehnologieAudio: \t" + tehnologieAudio);
+		sir.append("\n\tGreutate: \t\t" + greutate + " [kg]");
+		sir.append("\n\tDiagonalaEcran: \t" + diagonalaEcran + " [cm]");
+		sir.append("\n\tTehnologieDisplay: \t" + tehnologieDisplay);
+		sir.append("\n\tRezolutie: \t\t" + rezolutie);
+		sir.append("\n\tTipDisplay: \t\t" + tipDisplay + "\n\n");
+
+		return sir.toString();
+
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// returnam un nou obiect identic folosind constructorul de copiere
+		Televizor clona = new Televizor(this);
+		return clona;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi * 30;
+	}
+
+	@Override
+	public double calculeazaPretConsumPeZi(int oreConsumZi) {
+		return this.getPutereConsumata() * oreConsumZi;
+	}
+
 	// Metode setters si getters:
 	public String getTipTV() {
 		return tipTV;
@@ -117,37 +156,6 @@ public class Televizor extends AparatElectric {
 
 	public void setTipDisplay(String tipDisplay) {
 		this.tipDisplay = tipDisplay;
-	}
-
-	@Override
-	public String toString() {
-		StringBuilder sir = new StringBuilder();
-		//sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tTipTV: \t\t" + tipTV);
-		sir.append("\n\tTehnologieAudio: \t" + tehnologieAudio);
-		sir.append("\n\tGreutate: \t\t" + greutate + " [kg]");
-		sir.append("\n\tDiagonalaEcran: \t" + diagonalaEcran + " [cm]");
-		sir.append("\n\tTehnologieDisplay: \t" + tehnologieDisplay);
-		sir.append("\n\tRezolutie: \t\t" + rezolutie);
-		sir.append("\n\tTipDisplay: \t\t" + tipDisplay+"\n\n");
-
-		return sir.toString();
-
-	}
-
-	@Override
-	public double calculeazaPretConsumPeLuna(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi * 30;
-	}
-
-	@Override
-	public double calculeazaPretConsumPeZi(int oreConsumZi) {
-		return this.getPutereConsumata() * oreConsumZi;
 	}
 
 }

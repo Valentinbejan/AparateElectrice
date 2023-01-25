@@ -2,6 +2,7 @@ package pachet.emil.gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Image;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -106,9 +107,12 @@ public class GUI extends JFrame {
 
 	// metoda incarcare Icon-uri
 
-	public ImageIcon getImageIconFromJar(String classPath) {
-		URL url = getClass().getResource(classPath);
-		return new ImageIcon(new ImageIcon(url).getImage().getScaledInstance(40, 40, 1)); // 40 x 40 pixeli
+	public static ImageIcon getImageIconFromJar(String absolutePath) {
+
+		URL url = GUI.class.getResource(absolutePath);
+		Image image = new ImageIcon(url).getImage().getScaledInstance(40, 40, Image.SCALE_FAST); // 40 x 40 pixeli
+		return new ImageIcon(image);
+
 	}
 
 	// metode folosite in JPanels
@@ -146,7 +150,7 @@ public class GUI extends JFrame {
 	}
 
 	public static <T> void serialize(T object, File file) {
-		if (object instanceof Serializable == false) {
+		if (object != null && object instanceof Serializable == false) {
 			return;
 		}
 		String filePath = file.getAbsolutePath();
@@ -155,8 +159,6 @@ public class GUI extends JFrame {
 		try (FileOutputStream fos = new FileOutputStream(filePath);
 				ObjectOutputStream oos = new ObjectOutputStream(fos)) {
 			oos.writeObject(object);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

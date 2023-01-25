@@ -14,17 +14,17 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import pachet.clasegeneratoare.emil.GeneratorAspiratoare;
 import pachet.emil.clase.Aspirator;
 import pachet.emil.clasefilter.AspiratorFilter;
+import pachet.emil.clasegeneratoare.GeneratorAspiratoare;
 
 public class PanelAspiratoare extends JPanel {
 	private static final long serialVersionUID = 5656L;
-	private JTextField metoda1TextField = new JTextField();
-	private JComboBox<String> comboBox2 = new JComboBox<>();
+	private static JTextField metoda1TextField = new JTextField();
+	private static JComboBox<String> comboBox2 = new JComboBox<>();
 
 	public PanelAspiratoare() {
-		setLayout(null); //absolute
+		setLayout(null); // absolute
 		adaugaButoaneImportExport();
 		adaugaGenerarea();
 		adaugaFiltrarea();
