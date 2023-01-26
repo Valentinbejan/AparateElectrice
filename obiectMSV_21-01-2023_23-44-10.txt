@@ -1,8 +1,0 @@
-Echipament electrocasnic:	Masina de spalat vase compacta
-
-	Producator:		Beko
-	Pret:			3178.0 [lei]
-	Culoare:			Alb
-	Putere Consumata:	555.0 [W]
-	Numar de seturi:		13
-	Latime cuva:		42.0 [cm]
