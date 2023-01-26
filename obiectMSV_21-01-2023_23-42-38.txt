@@ -1,8 +1,0 @@
-Echipament electrocasnic:	Masina de spalat vase compacta
-
-	Producator:		Bosch
-	Pret:			3156.0 [lei]
-	Culoare:			Argintiu
-	Putere Consumata:	1968.0 [W]
-	Numar de seturi:		19
-	Latime cuva:		6.0 [cm]
