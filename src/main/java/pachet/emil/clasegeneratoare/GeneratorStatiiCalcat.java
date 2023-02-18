@@ -13,7 +13,7 @@ public class GeneratorStatiiCalcat {
 	private static int[] greutati = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	private static String[] lista_functii = new String[] { "auto-curatare", "anticalcar", "cu boiler" };
 
-	private static double[] lista_capacitati_rezervor_apa = new double[] { 1.5, 2.5, 3.5, 4.5, 5.5 };
+	private static double[] lista_capacitati_rezervor = new double[] { 1.5, 2.5, 3.5, 4.5, 5.5 };
 	private static String[] culori = new String[] { "albastru", "rosu", "galben", "verde", "mov", "portocaliu", "negru",
 			"alb" };
 
@@ -29,7 +29,7 @@ public class GeneratorStatiiCalcat {
 			s.setGreutate(greutati[r.nextInt(greutati.length)]);
 			s.setFunctie(lista_functii[r.nextInt(lista_functii.length)]);
 			s.setCapacitate_rezervor_apa(
-					lista_capacitati_rezervor_apa[r.nextInt(lista_capacitati_rezervor_apa.length)]);
+					lista_capacitati_rezervor[r.nextInt(lista_capacitati_rezervor.length)]);
 			listaStatiiDeCalcat.add(s);
 		}
 		return listaStatiiDeCalcat;

@@ -5,16 +5,16 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class RobotBucatarie extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
-	
-	private float capacitate;
+
+	private float capacitate; // ml
 	private int numarViteze;
 	private int numarUstensile;
-	private int nivelZgomot;
+	private int nivelZgomot; // dB
 
 	// Constructor implicit (fara parametri):
 	public RobotBucatarie() {
 		super();
-		this.capacitate = 0;
+		this.capacitate = 0f;
 		this.numarViteze = 0;
 		this.numarUstensile = 0;
 		this.nivelZgomot = 0;
@@ -23,7 +23,7 @@ public class RobotBucatarie extends AparatElectric {
 	// construcotr cu parametrii superclasei
 	public RobotBucatarie(String numeProdus, String producator, double pret, String culoare, double putereConsumata) {
 		super(numeProdus, producator, pret, culoare, putereConsumata);
-		this.capacitate = 0;
+		this.capacitate = 0f;
 		this.numarViteze = 0;
 		this.numarUstensile = 0;
 		this.nivelZgomot = 0;
@@ -50,27 +50,25 @@ public class RobotBucatarie extends AparatElectric {
 
 	@Override
 	public String toString() {
-		StringBuilder sir = new StringBuilder();
+		StringBuffer sir = new StringBuffer();
 
 		// sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tCapacitate: \t\t" + this.capacitate + " litri");
-		sir.append("\n\tNumar viteze: \t\t" + this.numarViteze);
-		sir.append("\n\tNumar ustensile: \t" + this.numarUstensile);
-		sir.append("\n\tNivel zgomot: \t\t" + this.nivelZgomot + " [dB]\n\n");
+		sir.append("\n Aparat electric:     \t\t" + getNumeProdus());
+		sir.append("\n\tProducator:         \t" + getProducator());
+		sir.append("\n\tPret:               \t" + getPret() + " [lei]");
+		sir.append("\n\tCuloare:            \t" + getCuloare());
+		sir.append("\n\tPutere consumata:   \t" + getPutereConsumata());
+		sir.append("\n\tCapacitate:         \t" + this.capacitate + " [litri]");
+		sir.append("\n\tNumar viteze:       \t" + this.numarViteze);
+		sir.append("\n\tNumar ustensile:    \t" + this.numarUstensile);
+		sir.append("\n\tNivel zgomot:       \t" + this.nivelZgomot + " [dB]\n\n");
 
 		return sir.toString();
 	}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// returnam un nou obiect identic folosind constructorul de copiere
-		RobotBucatarie clona = new RobotBucatarie(this);
-		return clona;
+	public Object clone() throws CloneNotSupportedException {
+		return new RobotBucatarie(this);
 	}
 
 	@Override

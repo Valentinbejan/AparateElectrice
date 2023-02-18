@@ -4,7 +4,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class Televizor extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
-	
+
 	private String tipTV; // ex:Clasic, SmartTV,SmartTV 3D,
 	private String tehnologieAudio; // ex: Fara, Dolby Digital, Dolby Digital Plus, Dolby Atmos
 	private double greutate;// ex:13,5 kg
@@ -65,30 +65,28 @@ public class Televizor extends AparatElectric {
 
 	@Override
 	public String toString() {
-		StringBuilder sir = new StringBuilder();
+		StringBuffer sir = new StringBuffer();
 		// sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tTipTV: \t\t" + tipTV);
-		sir.append("\n\tTehnologieAudio: \t" + tehnologieAudio);
-		sir.append("\n\tGreutate: \t\t" + greutate + " [kg]");
-		sir.append("\n\tDiagonalaEcran: \t" + diagonalaEcran + " [cm]");
-		sir.append("\n\tTehnologieDisplay: \t" + tehnologieDisplay);
-		sir.append("\n\tRezolutie: \t\t" + rezolutie);
-		sir.append("\n\tTipDisplay: \t\t" + tipDisplay + "\n\n");
+		sir.append("\n Aparat electric:     \t\t" + getNumeProdus());
+		sir.append("\n\tProducator:         \t" + getProducator());
+		sir.append("\n\tPret:               \t" + getPret() + " [lei]");
+		sir.append("\n\tCuloare:            \t" + getCuloare());
+		sir.append("\n\tPutere consumata:   \t" + getPutereConsumata());
+		sir.append("\n\tTipTV:              \t" + tipTV);
+		sir.append("\n\tTehnologieAudio:    \t" + tehnologieAudio);
+		sir.append("\n\tGreutate:           \t" + greutate + " [kg]");
+		sir.append("\n\tDiagonalaEcran:     \t" + diagonalaEcran + " [cm]");
+		sir.append("\n\tTehnologieDisplay:  \t" + tehnologieDisplay);
+		sir.append("\n\tRezolutie:          \t" + rezolutie);
+		sir.append("\n\tTipDisplay:         \t" + tipDisplay + "\n\n");
 
 		return sir.toString();
 
 	}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// returnam un nou obiect identic folosind constructorul de copiere
-		Televizor clona = new Televizor(this);
-		return clona;
+	public Object clone() throws CloneNotSupportedException {
+		return new Televizor(this);
 	}
 
 	@Override

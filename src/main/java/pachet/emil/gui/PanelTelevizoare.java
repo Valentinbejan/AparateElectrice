@@ -1,6 +1,5 @@
 package pachet.emil.gui;
 
-import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -20,10 +19,12 @@ import pachet.emil.clasegeneratoare.GeneratorTelevizore;
 
 public class PanelTelevizoare extends JPanel {
 	private static final long serialVersionUID = 5656L;
-	private static JComboBox<String> comboBox1 = new JComboBox<>();
-	private static JComboBox<String> comboBox2 = new JComboBox<>();
+	private static JComboBox<String> comboBox1;
+	private static JComboBox<String> comboBox2;
 
 	public PanelTelevizoare() {
+		comboBox1 = new JComboBox<>();
+		comboBox2 = new JComboBox<>();
 		setLayout(null); // absolute
 		adaugaButoaneImportExport();
 		adaugaGenerarea();
@@ -35,7 +36,7 @@ public class PanelTelevizoare extends JPanel {
 		btnExport.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if (GUI.getListaTelevizoare().isEmpty() == true) {
+				if (GUI.getListaTelevizoare().isEmpty()) {
 					GUI.afisare("Eroare export: lista este goala.");
 					return;
 				}
@@ -50,7 +51,7 @@ public class PanelTelevizoare extends JPanel {
 			}
 		});
 		btnExport.setRequestFocusEnabled(false);
-		btnExport.setFont(new Font("Arial", Font.BOLD, 12));
+		btnExport.setFont(GUI.getFontButoane());
 		btnExport.setBounds(217, 21, 100, 25);
 		add(btnExport);
 
@@ -76,28 +77,28 @@ public class PanelTelevizoare extends JPanel {
 			}
 		});
 		btnImport.setRequestFocusEnabled(false);
-		btnImport.setFont(new Font("Arial", Font.BOLD, 12));
+		btnImport.setFont(GUI.getFontButoane());
 		btnImport.setBounds(47, 21, 100, 25);
 		add(btnImport);
 	}
 
 	private void adaugaGenerarea() {
 		JLabel labelGenerare = new JLabel("Nr. televizoare:");
-		labelGenerare.setFont(new Font("Arial", Font.BOLD, 12));
+		labelGenerare.setFont(GUI.getFontLabel());
 		labelGenerare.setHorizontalAlignment(SwingConstants.LEFT);
 		labelGenerare.setBounds(47, 73, 149, 22);
 		add(labelGenerare);
 
 		JTextField textFieldGenerare;
 		textFieldGenerare = new JTextField();
-		textFieldGenerare.setFont(new Font("Arial", Font.BOLD, 13));
+		textFieldGenerare.setFont(GUI.getFontTextField());
 		textFieldGenerare.setHorizontalAlignment(SwingConstants.CENTER);
 		textFieldGenerare.setBounds(217, 72, 100, 25);
 		textFieldGenerare.setColumns(10);
 		add(textFieldGenerare);
 
 		JButton btnGenerare = new JButton("Genereaza");
-		btnGenerare.setFont(new Font("Arial", Font.BOLD, 12));
+		btnGenerare.setFont(GUI.getFontButoane());
 		btnGenerare.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -124,36 +125,38 @@ public class PanelTelevizoare extends JPanel {
 			}
 		});
 		bntAfisareElemGenerate.setRequestFocusEnabled(false);
-		bntAfisareElemGenerate.setFont(new Font("Arial", Font.BOLD, 12));
+		bntAfisareElemGenerate.setFont(GUI.getFontButoane());
 		bntAfisareElemGenerate.setBounds(217, 122, 100, 30);
 		add(bntAfisareElemGenerate);
 	}
 
 	private void adaugaFiltrarea() {
 		JLabel labelFiltrare = new JLabel("Filtreza dupa: ");
-		labelFiltrare.setFont(new Font("Arial", Font.BOLD, 14));
+		labelFiltrare.setFont(GUI.getFontLabel());
 		labelFiltrare.setHorizontalAlignment(SwingConstants.CENTER);
 		labelFiltrare.setBounds(118, 171, 100, 22);
 		add(labelFiltrare);
 
 		JLabel metoda1FiltrareLabel = new JLabel("Tip TV:");
-		metoda1FiltrareLabel.setFont(new Font("Arial", Font.BOLD, 12));
+		metoda1FiltrareLabel.setFont(GUI.getFontLabel());
 		metoda1FiltrareLabel.setHorizontalAlignment(SwingConstants.LEFT);
 		metoda1FiltrareLabel.setBounds(46, 213, 161, 31);
 		add(metoda1FiltrareLabel);
 
 		comboBox1.setModel(GUI.comboBoxModel(GeneratorTelevizore.getTipuriTV()));
 		comboBox1.setBounds(217, 216, 100, 25);
+		comboBox1.setFont(GUI.getFontComboBox());
 		add(comboBox1);
 
 		JLabel metoda2Label = new JLabel("Tehnologie audio: ");
-		metoda2Label.setFont(new Font("Arial", Font.BOLD, 12));
+		metoda2Label.setFont(GUI.getFontLabel());
 		metoda2Label.setHorizontalAlignment(SwingConstants.LEFT);
 		metoda2Label.setBounds(47, 267, 160, 31);
 		add(metoda2Label);
 
 		comboBox2.setModel(GUI.comboBoxModel(GeneratorTelevizore.getTehnologiiAudio()));
 		comboBox2.setBounds(217, 270, 100, 25);
+		comboBox2.setFont(GUI.getFontComboBox());
 		add(comboBox2);
 
 		JButton btnFiltrare = new JButton("Filtreaza");
@@ -166,29 +169,32 @@ public class PanelTelevizoare extends JPanel {
 				ArrayList<Televizor> listaFiltrata = new ArrayList<>();
 				String textDinCaseta1 = comboBox1.getModel().getSelectedItem().toString();
 				String textDinCaseta2 = comboBox2.getModel().getSelectedItem().toString();
+
 				boolean saFacutPrimaFiltrare = false;
 				boolean saFacutADouaFiltrare = false;
-				if (textDinCaseta1.equals("oricare") == false) {
+
+				if (!textDinCaseta1.equals("oricare")) {
 					listaFiltrata = TelevizorFilter.filtreazaDupaTipTV(GUI.getListaTelevizoare(), textDinCaseta1);
 					saFacutPrimaFiltrare = true;
 				}
-				if (textDinCaseta2.equals("oricare") == false) {
+
+				if (!textDinCaseta2.equals("oricare")) {
 					if (saFacutPrimaFiltrare) {
 						listaFiltrata = TelevizorFilter.filtreazaDupaTehnologieAudio(listaFiltrata, textDinCaseta2);
 					} else {
 						listaFiltrata = TelevizorFilter.filtreazaDupaTehnologieAudio(GUI.getListaTelevizoare(),
 								textDinCaseta2);
 					}
-					saFacutADouaFiltrare = true;
 				}
-				if (saFacutPrimaFiltrare == false && saFacutADouaFiltrare == false) {
+
+				if (!saFacutPrimaFiltrare && !saFacutADouaFiltrare) {
 					listaFiltrata = GUI.getListaTelevizoare();
 				}
-				GUI.afisare(listaFiltrata);
-				System.gc();
+
+				GUI.afisareFiltrare(listaFiltrata);
 			}
 		});
-		btnFiltrare.setFont(new Font("Arial", Font.BOLD, 12));
+		btnFiltrare.setFont(GUI.getFontButoane());
 		btnFiltrare.setBounds(118, 324, 100, 30);
 		btnFiltrare.setRequestFocusEnabled(false);
 		add(btnFiltrare);

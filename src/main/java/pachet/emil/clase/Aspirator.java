@@ -4,7 +4,7 @@ import pachet.clasa.abstracta.AparatElectric;
 
 public class Aspirator extends AparatElectric {
 	private static final long serialVersionUID = 5656L;
-	
+
 	private char clasaEmisiPraf; // A //B //C
 	private String tip; // vertical //horizontal
 	private String tipAspirare; // umeda //uscata
@@ -82,32 +82,31 @@ public class Aspirator extends AparatElectric {
 
 	@Override
 	public String toString() {
-		StringBuilder sir = new StringBuilder();
+
+		StringBuffer sir = new StringBuffer();
 		// sir.append(super.toString());
-		sir.append("\nAparat electric:\t\t" + getNumeProdus());
-		sir.append("\n\tProducator:\t\t" + getProducator());
-		sir.append("\n\tPret:\t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare:\t\t" + getCuloare());
-		sir.append("\n\tPutere consumata:\t" + getPutereConsumata());
-		sir.append("\n\tClasa emisi praf:\t" + this.clasaEmisiPraf);
-		sir.append("\n\tTip:\t\t" + this.tip);
-		sir.append("\n\tTip aspirare:\t\t" + this.tipAspirare);
-		sir.append("\n\tTip carcasa:\t\t" + this.tipCarcasa);
-		sir.append("\n\tTip sac:\t\t" + this.tipSac);
-		sir.append("\n\tTip filtru:\t\t" + this.tipFiltru);
-		sir.append("\n\tCapacitate de colectare:\t" + this.capacitateDeColectare + " [ml]");
-		sir.append("\n\tGreutate:\t\t" + this.greutate + " [kg]");
-		sir.append("\n\tNivel zgomot:\t\t" + this.nivelZgomot + " [dB]");
-		sir.append("\n\tNumar filtre:\t\t" + this.nrFiltre + "\n\n");
+		sir.append("\nAparat electric:           \t\t" + getNumeProdus());
+		sir.append("\n\tProducator:              \t" + getProducator());
+		sir.append("\n\tPret:                    \t" + getPret() + " [lei]");
+		sir.append("\n\tCuloare:                 \t" + getCuloare());
+		sir.append("\n\tPutere consumata:        \t" + getPutereConsumata());
+		sir.append("\n\tClasa emisi praf:        \t" + this.clasaEmisiPraf);
+		sir.append("\n\tTip:                     \t" + this.tip);
+		sir.append("\n\tTip aspirare:            \t" + this.tipAspirare);
+		sir.append("\n\tTip carcasa:             \t" + this.tipCarcasa);
+		sir.append("\n\tTip sac:                 \t" + this.tipSac);
+		sir.append("\n\tTip filtru:              \t" + this.tipFiltru);
+		sir.append("\n\tCapacitate de colectare: \t" + this.capacitateDeColectare + " [ml]");
+		sir.append("\n\tGreutate:                \t" + this.greutate + " [kg]");
+		sir.append("\n\tNivel zgomot:            \t" + this.nivelZgomot + " [dB]");
+		sir.append("\n\tNumar filtre:            \t" + this.nrFiltre + "\n\n");
 
 		return sir.toString();
 	}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// returnam un nou obiect identic folosind constructorul de copiere
-		Aspirator clona = new Aspirator(this);
-		return clona;
+	public Object clone() throws CloneNotSupportedException {
+		return new Aspirator(this);
 	}
 
 	// metode suprascrise din clasa abstracta

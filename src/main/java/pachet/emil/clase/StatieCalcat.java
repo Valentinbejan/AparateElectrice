@@ -11,7 +11,7 @@ public class StatieCalcat extends AparatElectric {
 	private String tip_panou_de_comanda; // mecanic //digital
 	private double greutate; // kg
 	private String functie; // auto-curatare //anticalcar //cu boiler
-	private double capacitate_rezervor_apa; // l
+	private double capacitateRezervor; // l
 
 	// Constructor implicit (fara parametri):
 	public StatieCalcat() {
@@ -21,7 +21,7 @@ public class StatieCalcat extends AparatElectric {
 		this.tip_panou_de_comanda = "";
 		this.greutate = 0;
 		this.functie = "";
-		this.capacitate_rezervor_apa = 0;
+		this.capacitateRezervor = 0;
 
 	}
 
@@ -33,7 +33,7 @@ public class StatieCalcat extends AparatElectric {
 		this.tip_panou_de_comanda = "";
 		this.greutate = 0;
 		this.functie = "";
-		this.capacitate_rezervor_apa = 0;
+		this.capacitateRezervor = 0;
 	}
 
 	// Constructor explicit (cu parametri):
@@ -46,7 +46,7 @@ public class StatieCalcat extends AparatElectric {
 		this.tip_panou_de_comanda = tip_panou_de_comanda;
 		this.greutate = greutate;
 		this.functie = functii;
-		this.capacitate_rezervor_apa = capacitate_rezervor_apa;
+		this.capacitateRezervor = capacitate_rezervor_apa;
 	}
 
 	// Constructor de copiere:
@@ -57,34 +57,32 @@ public class StatieCalcat extends AparatElectric {
 		this.tip_panou_de_comanda = s.tip_panou_de_comanda;
 		this.greutate = s.greutate;
 		this.functie = s.functie;
-		this.capacitate_rezervor_apa = s.capacitate_rezervor_apa;
+		this.capacitateRezervor = s.capacitateRezervor;
 	}
 
 	@Override
 	public String toString() {
-		StringBuilder sir = new StringBuilder();
+		StringBuffer sir = new StringBuffer();
 		// sir.append(super.toString());
-		sir.append("\n Aparat electric: \t\t" + getNumeProdus());
-		sir.append("\n\tProducator: \t\t" + getProducator());
-		sir.append("\n\tPret: \t\t" + getPret() + "[lei]");
-		sir.append("\n\tCuloare: \t\t" + getCuloare());
-		sir.append("\n\tPutere consumata: \t" + getPutereConsumata());
-		sir.append("\n\tTip: \t\t" + this.tip);
-		sir.append("\n\tMaterial talpa: \t\t" + this.materialTalpa);
-		sir.append("\n\tTip panou de comanda: \t" + this.tip_panou_de_comanda);
-		sir.append("\n\tGreutate: \t\t" + this.greutate + " kg");
-		sir.append("\n\tFunctie: \t\t" + this.functie);
-		sir.append("\n\tCapacitate rezervor apa: \t" + this.capacitate_rezervor_apa + " L\n\n");
+		sir.append("\n Aparat electric:          \t\t" + getNumeProdus());
+		sir.append("\n\tProducator:              \t" + getProducator());
+		sir.append("\n\tPret:                    \t" + getPret() + " [lei]");
+		sir.append("\n\tCuloare:                 \t" + getCuloare());
+		sir.append("\n\tPutere consumata:        \t" + getPutereConsumata());
+		sir.append("\n\tTip:                     \t" + this.tip);
+		sir.append("\n\tMaterial talpa:          \t" + this.materialTalpa);
+		sir.append("\n\tTip panou de comanda:    \t" + this.tip_panou_de_comanda);
+		sir.append("\n\tGreutate:                \t" + this.greutate + " [kg]");
+		sir.append("\n\tFunctie:                 \t" + this.functie);
+		sir.append("\n\tCapacitate rezervor:     \t" + this.capacitateRezervor + " [L]\n\n");
 
 		return sir.toString();
 
 	}
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// returnam un nou obiect identic folosind constructorul de copiere
-		StatieCalcat clona = new StatieCalcat(this);
-		return clona;
+	public Object clone() throws CloneNotSupportedException {
+		return new StatieCalcat(this);
 	}
 
 	@Override
@@ -140,11 +138,11 @@ public class StatieCalcat extends AparatElectric {
 	}
 
 	public double getCapacitate_rezervor_apa() {
-		return capacitate_rezervor_apa;
+		return capacitateRezervor;
 	}
 
 	public void setCapacitate_rezervor_apa(double capacitate_rezervor_apa) {
-		this.capacitate_rezervor_apa = capacitate_rezervor_apa;
+		this.capacitateRezervor = capacitate_rezervor_apa;
 	}
 
 }

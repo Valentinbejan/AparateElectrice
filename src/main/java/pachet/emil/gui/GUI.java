@@ -2,6 +2,7 @@ package pachet.emil.gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.Image;
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,18 +36,39 @@ import pachet.emil.clase.Televizor;
 public class GUI extends JFrame {
 
 	private static final long serialVersionUID = 5656L;
-	private static JTextArea textArea = new JTextArea();
-	private static JFileChooser jFileChooser = new JFileChooser();
-	private static ArrayList<Aspirator> listaAspiratoare = new ArrayList<>();
-	private static ArrayList<RobotBucatarie> listaRobotiDeBucatarie = new ArrayList<>();
-	private static ArrayList<StatieCalcat> listaStatiiDeCalcat = new ArrayList<>();
-	private static ArrayList<Televizor> listaTelevizoare = new ArrayList<>();
+
+	private static ArrayList<Aspirator> listaAspiratoare;
+	private static ArrayList<RobotBucatarie> listaRobotiDeBucatarie;
+	private static ArrayList<StatieCalcat> listaStatiiDeCalcat;
+	private static ArrayList<Televizor> listaTelevizoare;
+	private static JTextArea textArea;
+	private static JFileChooser jFileChooser;
+	private static Font fontButoane;
+	private static Font fontTextField;
+	private static Font fontLabel;
+	private static Font fontComboBox;
 
 	/**
 	 * Create the frame.
 	 */
 
 	public GUI() {
+
+		listaAspiratoare = new ArrayList<>();
+		listaRobotiDeBucatarie = new ArrayList<>();
+		listaStatiiDeCalcat = new ArrayList<>();
+		listaTelevizoare = new ArrayList<>();
+
+		jFileChooser = new JFileChooser();
+
+		fontButoane = new Font("Arial", Font.BOLD, 12);
+		fontTextField = new Font("Arial", Font.BOLD, 13);
+		fontLabel = new Font("Arial", Font.BOLD, 12);
+		fontComboBox = new Font("Arial", Font.BOLD, 13);
+
+		textArea = new JTextArea();
+		textArea.setFont(new Font("TimesNewRoman", Font.PLAIN, 14));
+
 		setTitle("Aparate Electrice");
 		setResizable(false);
 		setBackground(Color.LIGHT_GRAY);
@@ -71,20 +93,17 @@ public class GUI extends JFrame {
 
 		backgroundJPanel.add(tabbedPane);
 
-		Icon aspiratorIcon = null;
-		Icon robotDeBucatarieIcon = null;
-		Icon statieDeCalcatIcon = null;
-		Icon televizorIcon = null;
+		Icon aspiratorIcon = loadImageIcon("/icons/aspirator.png");
+		Icon robotDeBucatarieIcon = loadImageIcon("/icons/robotbucatarie.png");
+		Icon statieDeCalcatIcon = loadImageIcon("/icons/statiedecalcat.png");
+		Icon televizorIcon = loadImageIcon("/icons/televizor.png");
 
-		aspiratorIcon = getImageIconFromJar("/icons/aspirator.png");
-		robotDeBucatarieIcon = getImageIconFromJar("/icons/robotbucatarie.png");
-		statieDeCalcatIcon = getImageIconFromJar("/icons/statiedecalcat.png");
-		televizorIcon = getImageIconFromJar("/icons/televizor.png");
-
+		tabbedPane.setFont(new Font("Arial", Font.BOLD, 12));
 		tabbedPane.addTab("Aspiratoare", aspiratorIcon, new PanelAspiratoare());
 		tabbedPane.addTab("Roboti de bucatarie", robotDeBucatarieIcon, new PanelRobotiDeBucatarie());
 		tabbedPane.addTab("Statii de calcat", statieDeCalcatIcon, new PanelStatiiDeCalcat());
 		tabbedPane.addTab("Televizoare", televizorIcon, new PanelTelevizoare());
+
 		// tabbedPane.setFocusable(false);
 
 	}
@@ -98,6 +117,7 @@ public class GUI extends JFrame {
 				try {
 					GUI frame = new GUI();
 					frame.setVisible(true);
+
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -107,8 +127,7 @@ public class GUI extends JFrame {
 
 	// metoda incarcare Icon-uri
 
-	public static ImageIcon getImageIconFromJar(String absolutePath) {
-
+	static ImageIcon loadImageIcon(String absolutePath) {
 		URL url = GUI.class.getResource(absolutePath);
 		Image image = new ImageIcon(url).getImage().getScaledInstance(40, 40, Image.SCALE_FAST); // 40 x 40 pixeli
 		return new ImageIcon(image);
@@ -116,7 +135,7 @@ public class GUI extends JFrame {
 	}
 
 	// metode folosite in JPanels
-	public static boolean isInteger(String str) {
+	static boolean isInteger(String str) {
 		try {
 			Integer.parseInt(str);
 			return true;
@@ -125,23 +144,46 @@ public class GUI extends JFrame {
 		}
 	}
 
-	public static void afisare(String text) {
+	static void afisare(String text) {
 		if (text == null)
 			return;
-		GUI.textArea.setText(text);
-	}
-
-	public static <T> void afisare(ArrayList<T> objects) {
-		if (objects == null)
-			return;
-		StringBuilder stringBuilder = new StringBuilder();
-		for (Object obj : objects)
-			stringBuilder.append(obj.toString());
-		GUI.textArea.setText(stringBuilder.toString());
+		textArea.setText(text);
 		System.gc();
 	}
 
-	public static DefaultComboBoxModel<String> comboBoxModel(String[] lista) {
+	static <T> void afisare(ArrayList<T> objects) {
+		if (objects == null)
+			return;
+
+		if (objects.size() == 0) {
+			textArea.setText("Eroare afisare: Nici un aparat electric de acest tip nu a fost generat.");
+			return;
+		}
+		StringBuffer sir = new StringBuffer();
+		for (Object obj : objects)
+			sir.append(obj.toString());
+		textArea.setText(sir.toString());
+		System.gc();
+
+	}
+
+	static <T> void afisareFiltrare(ArrayList<T> objects) {
+
+		if (objects.size() == 0) {
+			textArea.setText("Filtrare: Nu a fost gasit nici un aparat electric.");
+			return;
+		}
+
+		afisare(objects);
+		if (objects.size() == 1) {
+			textArea.append("A fost gasit un singur aparat electric.\n\n");
+		} else {
+			textArea.append("Au fost gasite " + objects.size() + " aparate electrice.\n\n");
+		}
+
+	}
+
+	static DefaultComboBoxModel<String> comboBoxModel(String[] lista) {
 		String[] listaNoua = new String[lista.length + 1];
 		listaNoua[0] = "oricare";
 		for (int i = 1; i < listaNoua.length; i++)
@@ -149,7 +191,7 @@ public class GUI extends JFrame {
 		return new DefaultComboBoxModel<String>(listaNoua);
 	}
 
-	public static <T> void serialize(T object, File file) {
+	static <T> void serialize(T object, File file) {
 		if (object != null && object instanceof Serializable == false) {
 			return;
 		}
@@ -166,7 +208,7 @@ public class GUI extends JFrame {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static <T> ArrayList<T> deserialize(File file, Class<T> tClass) {
+	static <T> ArrayList<T> deserialize(File file, Class<T> tClass) {
 		String filePath = file.getAbsolutePath();
 		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
 			String primaLinie = reader.readLine();
@@ -192,40 +234,56 @@ public class GUI extends JFrame {
 	}
 
 	// Getteri si setteri
-	public static JFileChooser getjFileChooser() {
+	static JFileChooser getjFileChooser() {
 		return jFileChooser;
 	}
 
-	public static ArrayList<RobotBucatarie> getListaRobotiDeBucatarie() {
+	static ArrayList<RobotBucatarie> getListaRobotiDeBucatarie() {
 		return listaRobotiDeBucatarie;
 	}
 
-	public static void setListaRobotiDeBucatarie(ArrayList<RobotBucatarie> listaRobotiDeBucatarie) {
+	static void setListaRobotiDeBucatarie(ArrayList<RobotBucatarie> listaRobotiDeBucatarie) {
 		GUI.listaRobotiDeBucatarie = listaRobotiDeBucatarie;
 	}
 
-	public static ArrayList<StatieCalcat> getListaStatiiDeCalcat() {
+	static ArrayList<StatieCalcat> getListaStatiiDeCalcat() {
 		return listaStatiiDeCalcat;
 	}
 
-	public static void setListaStatiiDeCalcat(ArrayList<StatieCalcat> listaStatiiDeCalcat) {
+	static void setListaStatiiDeCalcat(ArrayList<StatieCalcat> listaStatiiDeCalcat) {
 		GUI.listaStatiiDeCalcat = listaStatiiDeCalcat;
 	}
 
-	public static ArrayList<Televizor> getListaTelevizoare() {
+	static ArrayList<Televizor> getListaTelevizoare() {
 		return listaTelevizoare;
 	}
 
-	public static void setListaTelevizoare(ArrayList<Televizor> listaTelevizoare) {
+	static void setListaTelevizoare(ArrayList<Televizor> listaTelevizoare) {
 		GUI.listaTelevizoare = listaTelevizoare;
 	}
 
-	public static ArrayList<Aspirator> getListaAspiratoare() {
+	static ArrayList<Aspirator> getListaAspiratoare() {
 		return listaAspiratoare;
 	}
 
-	public static void setListaAspiratoare(ArrayList<Aspirator> listaAspiratoare) {
+	static void setListaAspiratoare(ArrayList<Aspirator> listaAspiratoare) {
 		GUI.listaAspiratoare = listaAspiratoare;
+	}
+
+	static Font getFontButoane() {
+		return fontButoane;
+	}
+
+	static Font getFontTextField() {
+		return fontTextField;
+	}
+
+	static Font getFontLabel() {
+		return fontLabel;
+	}
+
+	static Font getFontComboBox() {
+		return fontComboBox;
 	}
 
 }

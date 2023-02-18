@@ -1,6 +1,9 @@
 package pachet.emil.teste;
 
-import pachet.emil.clase.*;
+import pachet.emil.clase.Aspirator;
+import pachet.emil.clase.RobotBucatarie;
+import pachet.emil.clase.StatieCalcat;
+import pachet.emil.clase.Televizor;
 
 public class TestAparate {
 
